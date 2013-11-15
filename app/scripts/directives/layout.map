@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "layout.js",
+  "sourceRoot": "",
+  "sources": [
+    "layout.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;CAAA,CAAA,UAAA;CAAA,KAAA,IAAA;;CAAA,CACA,CAAa,MAAA,CAAb;;CADA,CAEA,CACuB,GADvB,CAAO,CAAP,CAAA,GAAA;WAEI;CAAA,CAAa,IAAb,KAAA,mBAAA;CAAA,CACY,EADZ,EACA,IAAA;CADA,CAES,EAFT,EAEA,CAAA;CAFA,CAGO,EAHP,CAGA,CAAA;CAHA,CAIU,CAJV,GAIA,EAAA;CAJA,CAKY,IAAZ,EAAY,EAAZ;CANmB;CADvB,EACuB;CAHvB"
+}
