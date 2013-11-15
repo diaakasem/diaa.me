@@ -14,7 +14,3 @@
   });
 
 }).call(this);
-
-/*
-//@ sourceMappingURL=navmenu.map
-*/
