@@ -21,8 +21,12 @@
       templateUrl: "views/connect.html",
       controller: "ConnectCtrl"
     }).otherwise({
-      redirectTo: "/"
+      redirectTo: "/aboutme"
     });
   });
 
 }).call(this);
+
+/*
+//@ sourceMappingURL=app.map
+*/

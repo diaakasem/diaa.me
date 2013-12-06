@@ -18,5 +18,5 @@ angular.module("diaa.meApp", []).config ($routeProvider) ->
   ).when("/connect",
     templateUrl: "views/connect.html",
     controller: "ConnectCtrl"
-  ).otherwise redirectTo: "/"
+  ).otherwise redirectTo: "/aboutme"
 
