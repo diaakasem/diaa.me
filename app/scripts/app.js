@@ -2,10 +2,7 @@
 (function() {
   "use strict";
   angular.module("diaa.meApp", []).config(function($routeProvider) {
-    return $routeProvider.when("/", {
-      templateUrl: "views/main.html",
-      controller: "MainCtrl"
-    }).when("/aboutme", {
+    return $routeProvider.when("/aboutme", {
       templateUrl: "views/aboutme.html",
       controller: "AboutmeCtrl"
     }).when("/projects", {

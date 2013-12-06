@@ -1,22 +1,23 @@
 "use strict"
 angular.module("diaa.meApp", []).config ($routeProvider) ->
-  $routeProvider.when("/",
-    templateUrl: "views/main.html"
-    controller: "MainCtrl"
-  ).when("/aboutme",
+  #$routeProvider.when "/",
+    #templateUrl: "views/main.html"
+    #controller: "MainCtrl"
+
+  $routeProvider.when "/aboutme",
     templateUrl: "views/aboutme.html",
     controller: "AboutmeCtrl"
-  ).when("/projects",
+  .when "/projects",
     templateUrl: "views/projects.html",
     controller: "ProjectsCtrl"
-  ).when("/career",
+  .when "/career",
     templateUrl: "views/career.html",
     controller: "CareerCtrl"
-  ).when("/hobbies",
+  .when "/hobbies",
     templateUrl: "views/hobbies.html",
     controller: "HobbiesCtrl"
-  ).when("/connect",
+  .when "/connect",
     templateUrl: "views/connect.html",
     controller: "ConnectCtrl"
-  ).otherwise redirectTo: "/aboutme"
+  .otherwise redirectTo: "/aboutme"
 
