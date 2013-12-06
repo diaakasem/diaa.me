@@ -2,6 +2,10 @@
 (function() {
   "use strict";
   angular.module("diaa.meApp", []).config(function($routeProvider) {
+    $routeProvider.when("/", {
+      templateUrl: "views/main.html",
+      controller: "MainCtrl"
+    });
     return $routeProvider.when("/aboutme", {
       templateUrl: "views/aboutme.html",
       controller: "AboutmeCtrl"
@@ -18,7 +22,7 @@
       templateUrl: "views/connect.html",
       controller: "ConnectCtrl"
     }).otherwise({
-      redirectTo: "/aboutme"
+      redirectTo: "/"
     });
   });
 

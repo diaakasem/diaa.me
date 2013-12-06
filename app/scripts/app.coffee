@@ -1,8 +1,9 @@
 "use strict"
 angular.module("diaa.meApp", []).config ($routeProvider) ->
-  #$routeProvider.when "/",
-    #templateUrl: "views/main.html"
-    #controller: "MainCtrl"
+
+  $routeProvider.when "/",
+    templateUrl: "views/main.html"
+    controller: "MainCtrl"
 
   $routeProvider.when "/aboutme",
     templateUrl: "views/aboutme.html",
@@ -19,5 +20,6 @@ angular.module("diaa.meApp", []).config ($routeProvider) ->
   .when "/connect",
     templateUrl: "views/connect.html",
     controller: "ConnectCtrl"
-  .otherwise redirectTo: "/aboutme"
+
+  .otherwise redirectTo: "/"
 
