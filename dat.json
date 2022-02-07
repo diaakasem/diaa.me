@@ -1,0 +1,6 @@
+{
+  "title": "Diaa.me",
+  "experimental": {
+    "apis": ["datPeers", "globalFetch", "capturePage"]
+  }
+}
