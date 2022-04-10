@@ -23,6 +23,6 @@ set -o nounset                              # Treat unset variables as an error
 # Now all requests to www.diaa.me are going to diaa.me
 buckets="diaa.me"
 for bucket in $buckets; do
-    aws s3 sync . s3://$bucket --exclude=".git/*" --exclude=".tmp/*"
+    aws --profile=diaa s3 sync . s3://$bucket --exclude=".git/*" --exclude=".tmp/*"
 done
 
