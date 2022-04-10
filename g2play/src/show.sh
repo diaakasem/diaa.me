@@ -46,7 +46,7 @@ do
       voice="$(voicePick "$char")"
       # echo "$voice"
       if [[ "$isActor" == "1" ]]; then
-        echo "And You Say.."
+        echo "And You ($char) Say.."
         echo
         say -v "Ava" -r "120" "And You Say.."
         echo "        $line"
@@ -54,7 +54,7 @@ do
         echo
       elif [[ "$actor" == "scene" ]]; then
         echo
-        echo "        $line"
+        echo "$line"
         say -v "$voice" -r "$rate" "$line"
         echo
       else
