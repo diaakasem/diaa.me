@@ -7,31 +7,25 @@ function voicePick() {
     "All Dragons") voice="Bad News" ;;
     "All Knights") voice="Tom" ;;
     "All Princesses") voice="Ava" ;;
-    "Princess 1") voice="Agnes" ;;
+    "Princess 1") voice="Samantha" ;;
     "Susie") voice="Allison" ;;
     "Little Dragon") voice="Alex" ;;
     "Princess 3") voice="Susan" ;;
     "Jester") voice="Cellos" ;;
-    "Fairy 2") voice="Aurlie" ;;
-    "Princess 2 & 4") voice="Siri Female" ;;
-    "Knight 1") voice="Tarek" ;;
-    "Fairy 2&3") voice="Vicki" ;;
-    "Princess 4") voice="Samantha" ;;
+    "Fairy 2") voice="Karen" ;;
+    "Princess 2 & 4") voice="Serena" ;;
+    "Knight 1") voice="Tarik" ;;
+    "Fairy 2&3") voice="Veena" ;;
+    "Princess 4") voice="Agnes" ;;
     "Princess 2") voice="Laila" ;;
-    "Fairy 3") voice="Moria" ;;
-    *)
-      voice="Ava"
-      ;;
-# Fairy 3
-# Jester
-# Knight 1
-# Knight 2
-# Knight 3
-# Knight 4
-# Knight 5
-# Princess 2
-# Princess 3 & 4
-# Princess 4
+    "Fairy 3") voice="Moira" ;;
+    "Dragon King") voice="Bruce" ;;
+    "Princess 3 & 4") voice="Aurelie" ;;
+    "Knight 5") voice="Thomas" ;;
+    "Knight 4") voice="Daniel" ;;
+    "Knight 3") voice="Rishi" ;;
+    "Knight 2") voice="Lee" ;;
+    *) voice="Ava" ;;
   esac
   echo "$voice"
 }
@@ -47,17 +41,19 @@ do
       char=$(octosql --output csv "select character from script2.csv where id = $i" | uniq | tail +2)
       line=$(octosql --output csv "select line from script2.csv where id = $i" | uniq | tail +2)
       rate=$(octosql --output csv "select wpm from script2.csv where id = $i" | uniq | tail +2)
-      echo "$char"
+      # echo "$char"
       voice="$(voicePick "$char")"
-      echo "$voice"
-      if [[ $actor == $character ]]; then
+      # echo "$voice"
+      if [[ $actor == $character || $actor == 'All Princesses' ]]; then
         echo "And You Say.."
         echo
         say -v "Ava" -r "120" "And You Say.."
         echo "        $line"
+        sleep 5
         echo
       elif [[ $actor == "scene" ]]; then
         echo
+        echo "        $line"
         say -v "$voice" -r "$rate" "$line"
         echo
       else

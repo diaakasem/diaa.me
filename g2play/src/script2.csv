@@ -6,8 +6,8 @@
 2,"All Knights","Orhan","Here! Here!",0
 2,"All Knights","Selim","Here! Here!",0
 3,"Jester","Moussa","The knights roamed around the castle to keep them safe at all times. ... and a family of dragons that lived nearby.",0
-4,"All Dragons","Hassan","Roaaaaaar! Roaaar!",120
-4,"All Dragons","Yassin","Roaaaaaar! Roaaar!",120
+4,"All Dragons","Hassan","Roar! Roar!",120
+4,"All Dragons","Yassin","Roar! Roar!",120
 5,"Jester","Moussa","But then some fairies moved in and created all sorts of trouble. Susie Sally Sassafras was the worst of all.",0
 6,"Susie","Aseel","Peace is boring.",0
 7,"Fairy 2&3","Hala","Yeah!",0
@@ -20,16 +20,16 @@
 13,"Susie","Aseel","Those things are ok, but do you know who has prettier things than that?",0
 14,"Little Dragon","Yassin","Who?",0
 15,"Susie","Aseel","The princesses! You can go to the castle and take the pretty things from the princesses.",0
-16,"Fairy 2&3","Hala","laughs: HA. HA. HA.",0
-16,"Fairy 2&3","Roya","laughs: HA. HA. HA.",0
+16,"Fairy 2&3","Hala","laughs: Ha. Ha. Ha.",0
+16,"Fairy 2&3","Roya","laughs: Ha. Ha. Ha.",0
 17,"scene","scene","All fairies fly away and leave the stage.",0
 17,"scene","scene","Little Dragon SNEAKS inside the CASTLE",0
 18,"Jester","Moussa","The little dragon sneaked into the castle and took one of the princess's pretty things.",0
 19,"Princess 1","Mariam","This is the prettiest thing ever!",0
-20,"Little Dragon","Yassin","I love it! Roaaaaar!",0
+20,"Little Dragon","Yassin","I love it! Roar!",110
 21,"scene","scene","He grabs the pretty thing from her.",0
-22,"Princess 1","Mariam","Nooooooo!",140
-23,"Little Dragon","Yassin","Yeeeessss!",140
+22,"Princess 1","Mariam","No!",100
+23,"Little Dragon","Yassin","Yes!",100
 24,"scene","scene","He grabs the pretty thing from her.",0
 25,"Princess 1","Mariam","Where are you going with my pretty thing?!",0
 26,"Little Dragon","Yassin","Ha! Ha!",0
@@ -50,18 +50,18 @@
 40,"Princess 2 & 4","Rokaia","Deal.",0
 40,"Princess 2 & 4","Malika G.","Deal.",0
 41,"scene","scene","Princesses shake hands",0
-42,"All Princesses","Malika G.","Gooooo Princesses!",120
-42,"All Princesses","Mariam","Gooooo Princesses!",120
-42,"All Princesses","Rokaia","Gooooo Princesses!",120
-42,"All Princesses","Sumeyra","Gooooo Princesses!",120
+42,"All Princesses","Malika G.","Go Princesses!",100
+42,"All Princesses","Mariam","Go Princesses!",100
+42,"All Princesses","Rokaia","Go Princesses!",100
+42,"All Princesses","Sumeyra","Go Princesses!",100
 43,"scene","scene","Princess 3 goes in and sneaks up to Little Dragon. Dragon moves while sleeping. She tries not to be afraid. She finds something pretty, grabs it and comes out.",0
 44,"Princess 1","Mariam","I LOVE IT!",0
-45,"All Dragons","Hassan","Roooaaarr!",100
-45,"All Dragons","Yassin","Roooaaarr!",100
-46,"All Princesses","Malika G.","Oooops! oh Oooh!",180
-46,"All Princesses","Mariam","Oooops! oh Oooh!",180
-46,"All Princesses","Rokaia","Oooops! oh Oooh!",180
-46,"All Princesses","Sumeyra","Oooops! oh Oooh!",180
+45,"All Dragons","Hassan","Roar!",100
+45,"All Dragons","Yassin","Roar!",100
+46,"All Princesses","Malika G.","Oops! Oh Oh!",110
+46,"All Princesses","Mariam","Oops! Oh Oh!",110
+46,"All Princesses","Rokaia","Oops! Oh Oh!",110
+46,"All Princesses","Sumeyra","Oops! Oh Oh!",110
 47,"scene","scene","Princesses run and hide behind the castle. Dragons approach the castle and Knights try fighting dragons.",0
 48,"Jester","Moussa","All the knights were quite angry about the dragons trying to destroy the castle.",0
 49,"Knight 1","Selim","We are quite angry.",0
@@ -74,23 +74,23 @@
 54,"Knight 3","Orhan","Where are we going to find a jackalope?",0
 55,"Knight 1","Selim","Follow me. I know where the jackalope might be.",0
 56,"scene","scene","The knights move around and catch a jackalope from behind a tree.. From the other side of the stage, the princesses appear happily skipping along.",0
-57,"All Princesses","Malika G.","Stop!",180
-57,"All Princesses","Mariam","Stop!",180
-57,"All Princesses","Rokaia","Stop!",180
-57,"All Princesses","Sumeyra","Stop!",180
+57,"All Princesses","Malika G.","Stop!",150
+57,"All Princesses","Mariam","Stop!",150
+57,"All Princesses","Rokaia","Stop!",150
+57,"All Princesses","Sumeyra","Stop!",150
 58,"Knight 4","Omar W.","What?",0
 59,"Princess 4","Malika G.","You can't destroy this poor little innocent creature.",0
 60,"Knight 4","Omar W.","Why not?",0
-61,"Princess 2","Rokaia","Because he is soooo cuuuuute.",0
+61,"Princess 2","Rokaia","Because he is so cute.",110
 62,"Knight 5","Mohamed","Stand aside.",0
 63,"Princess 1","Mariam","Never! We are princesses and you knights must do whatever we say, rightn",0
 64,"Knight 5","Mohamed","Well... We guess so.",0
 65,"Princess 1","Mariam","We command you to be friends with this little creature.",0
 66,"All Knights","Fouad","What?!",200
-66,"All Knights","Mohamed","What?!",200
-66,"All Knights","Omar W.","What?!",200
-66,"All Knights","Orhan","What?!",200
-66,"All Knights","Selim","What?!",200
+66,"All Knights","Mohamed","What?!",180
+66,"All Knights","Omar W.","What?!",180
+66,"All Knights","Orhan","What?!",180
+66,"All Knights","Selim","What?!",180
 67,"Princess 3","Sumeyra","Swear it!",180
 68,"All Knights","Fouad","Fine, fine. Whatever. We swear it.",0
 68,"All Knights","Mohamed","Fine, fine. Whatever. We swear it.",0
@@ -135,8 +135,8 @@
 94,"All Knights","Orhan","Did we hurt them?",0
 94,"All Knights","Selim","Did we hurt them?",0
 95,"Dragon King","Hassan","No, we just have REALLY BAD tummy aches.",0
-96,"All Dragons","Hassan","Oooowwwwww!",130
-96,"All Dragons","Yassin","Oooowwwwww!",130
+96,"All Dragons","Hassan","Ow!",100
+96,"All Dragons","Yassin","Ow!",100
 97,"Susie","Aseel","We'll give you this drink if you promise to NEVER take another pretty thing without asking first.",0
 98,"All Dragons","Hassan","We promise.",0
 98,"All Dragons","Yassin","We promise.",0
