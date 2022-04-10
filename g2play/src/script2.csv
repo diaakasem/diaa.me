@@ -1,43 +1,43 @@
 "id","character","actor","line","wpm"
-1,"Jester","Moussa","Once upon a time, there were three families. There was a royal family of princesses that lived in a big castle. ...A family of knights.",0
+1,"Jester","Moussa","Once upon a time, there were three families. There was a royal family of princesses; that lived in a big castle. ...A family of knights,",0
 2,"All Knights","Fouad","Here! Here!",0
 2,"All Knights","Mohamed","Here! Here!",0
 2,"All Knights","Omar W.","Here! Here!",0
 2,"All Knights","Orhan","Here! Here!",0
 2,"All Knights","Selim","Here! Here!",0
-3,"Jester","Moussa","The knights roamed around the castle to keep them safe at all times. ... and a family of dragons that lived nearby.",0
-4,"All Dragons","Hassan","Roar! Roar!",120
-4,"All Dragons","Yassin","Roar! Roar!",120
-5,"Jester","Moussa","But then some fairies moved in and created all sorts of trouble. Susie Sally Sassafras was the worst of all.",0
+3,"Jester","Moussa","The knights roamed around the castle to keep them safe at all times. ... And, a family of dragons that lived nearby.",0
+4,"All Dragons","Hassan","Roaar! Roar!",120
+4,"All Dragons","Yassin","Roaar! Roar!",120
+5,"Jester","Moussa","But, then some fairies moved in, and created all sorts of trouble. Susie Sally Sassafras was the worst of all.",0
 6,"Susie","Aseel","Peace is boring.",0
 7,"Fairy 2&3","Hala","Yeah!",0
 7,"Fairy 2&3","Roya","Yeah!",0
 8,"Susie","Aseel","Let's make things a little more interesting.",0
 9,"Fairy 2","Hala","Yes, let's fly around and see what we can do for fun.",0
 10,"Fairy 3","Roya","Let's go",0
-11,"scene","scene","Susie and the fairies fly up to a little dragon who is playing with something pretty.",0
+11,"scene","scene","Susie and the fairies fly up to a little dragon; who is playing with something pretty.",0
 12,"Little Dragon","Yassin","I love pretty things and pretty things I love.",0
-13,"Susie","Aseel","Those things are ok, but do you know who has prettier things than that?",0
+13,"Susie","Aseel","Those things are ok, but, do you know who has prettier things than that?",0
 14,"Little Dragon","Yassin","Who?",0
 15,"Susie","Aseel","The princesses! You can go to the castle and take the pretty things from the princesses.",0
-16,"Fairy 2&3","Hala","laughs: Ha. Ha. Ha.",0
-16,"Fairy 2&3","Roya","laughs: Ha. Ha. Ha.",0
+16,"Fairy 2&3","Hala","Haa, Haa. Ha.",0
+16,"Fairy 2&3","Roya","Haa, Haa. Ha.",0
 17,"scene","scene","All fairies fly away and leave the stage.",0
 17,"scene","scene","Little Dragon SNEAKS inside the CASTLE",0
 18,"Jester","Moussa","The little dragon sneaked into the castle and took one of the princess's pretty things.",0
 19,"Princess 1","Mariam","This is the prettiest thing ever!",0
 20,"Little Dragon","Yassin","I love it! Roar!",110
 21,"scene","scene","He grabs the pretty thing from her.",0
-22,"Princess 1","Mariam","No!",100
-23,"Little Dragon","Yassin","Yes!",100
+22,"Princess 1","Mariam","Noo!",110
+23,"Little Dragon","Yassin","Yes!",120
 24,"scene","scene","He grabs the pretty thing from her.",0
 25,"Princess 1","Mariam","Where are you going with my pretty thing?!",0
 26,"Little Dragon","Yassin","Ha! Ha!",0
 27,"scene","scene","The little dragon sneaks away and Susie and the fairies appear on stage. Susie whispers into Princess 2's ears",0
 28,"Susie","Aseel","You will take back your pretty thing and take all the dragon's treasure.",0
 29,"scene","scene","Princess 2 chills and then looks mad.",0
-30,"Princess 2","Rokaia","Ehhhhh! Don't worry. We'll get your pretty thing back.",0
-31,"Princess 1","Mariam","Oh please! I don't know what to do?",0
+30,"Princess 2","Rokaia","..Eeh! Don't worry. We'll get your pretty thing back.",0
+31,"Princess 1","Mariam","Oh, please! I don't know what to do!",0
 32,"scene","scene","Princesses skip up to a cave which is now in the center of the stage. Dragons are sleeping there.",0
 33,"Princess 4","Malika G.","Okay, now you go inside and get the pretty thing back.",0
 34,"Princess 3","Sumeyra","Okay.",0
@@ -49,19 +49,19 @@
 39,"Princess 3","Sumeyra","Fine. But I get half the treasure.",0
 40,"Princess 2 & 4","Rokaia","Deal.",0
 40,"Princess 2 & 4","Malika G.","Deal.",0
-41,"scene","scene","Princesses shake hands",0
-42,"All Princesses","Malika G.","Go Princesses!",100
-42,"All Princesses","Mariam","Go Princesses!",100
-42,"All Princesses","Rokaia","Go Princesses!",100
-42,"All Princesses","Sumeyra","Go Princesses!",100
+41,"scene","scene","Princesses shake hands.",0
+42,"All Princesses","Malika G.","Go Princesses!",110
+42,"All Princesses","Mariam","Go Princesses!",110
+42,"All Princesses","Rokaia","Go Princesses!",110
+42,"All Princesses","Sumeyra","Go Princesses!",110
 43,"scene","scene","Princess 3 goes in and sneaks up to Little Dragon. Dragon moves while sleeping. She tries not to be afraid. She finds something pretty, grabs it and comes out.",0
 44,"Princess 1","Mariam","I LOVE IT!",0
-45,"All Dragons","Hassan","Roar!",100
-45,"All Dragons","Yassin","Roar!",100
-46,"All Princesses","Malika G.","Oops! Oh Oh!",110
-46,"All Princesses","Mariam","Oops! Oh Oh!",110
-46,"All Princesses","Rokaia","Oops! Oh Oh!",110
-46,"All Princesses","Sumeyra","Oops! Oh Oh!",110
+45,"All Dragons","Hassan","Roaar!",100
+45,"All Dragons","Yassin","Roaar!",100
+46,"All Princesses","Malika G.","Oops! O Oh!",110
+46,"All Princesses","Mariam","Oops! O Oh!",110
+46,"All Princesses","Rokaia","Oops! O Oh!",110
+46,"All Princesses","Sumeyra","Oops! O Oh!",110
 47,"scene","scene","Princesses run and hide behind the castle. Dragons approach the castle and Knights try fighting dragons.",0
 48,"Jester","Moussa","All the knights were quite angry about the dragons trying to destroy the castle.",0
 49,"Knight 1","Selim","We are quite angry.",0
@@ -102,42 +102,43 @@
 71,"Knight 1","Selim","No... nothing else can defeat the dragons.",0
 72,"Princess 1","Mariam","Yes, there is another way. We need a little fairy that can sneak through.",0
 73,"scene","scene","the fairies overheard the princesses and were excited to join into trouble",0
-74,"Susie","Aseel","Did someone say... sneak!",200
-75,"All Princesses","Malika G.","Who are you?",0
-75,"All Princesses","Mariam","Who are you?",0
-75,"All Princesses","Rokaia","Who are you?",0
-75,"All Princesses","Sumeyra","Who are you?",0
+74,"Susie","Aseel","Did someone say;... Sneak!",200
+75,"All Princesses","Malika G.","Who are you?!",0
+75,"All Princesses","Mariam","Who are you?!",0
+75,"All Princesses","Rokaia","Who are you?!",0
+75,"All Princesses","Sumeyra","Who are you?!",0
 76,"Susie","Aseel","I'm Susie Sally Saasafaras. The sneaky Fairy.",0
 77,"Fairy 2","Hala","I'm Dana.",0
-78,"Fairy 3","Roya","and I'm Mady",0
+78,"Fairy 3","Roya","And, I'm Mady",120
 79,"All Princesses","Malika G.","What can you do to help us defeat the dragons?",0
 79,"All Princesses","Mariam","What can you do to help us defeat the dragons?",0
 79,"All Princesses","Rokaia","What can you do to help us defeat the dragons?",0
 79,"All Princesses","Sumeyra","What can you do to help us defeat the dragons?",0
-80,"Susie","Aseel","Dragons eh? I have just the thing you need.",0
-81,"Princess 3","Sumeyra","You do?",0
+80,"Susie","Aseel","Dragons, eh?! I have just the thing you need.",0
+81,"Princess 3","Sumeyra","You do?!",0
 82,"Fairy 2","Hala","We know their weakness.",0
-83,"Princess 2","Rokaia","You do?",0
-84,"Fairy 2","Hala","Cheese!",0
+83,"Princess 2","Rokaia","You do?!",120
+84,"Fairy 2","Hala","Cheese!",110
 85,"Princess 1","Mariam","You've got to be kidding.",0
-86,"Fairy 2","Hala","All dragons are lactose intolerant. (all princesses stare at each other with surprise)",0
-87,"Princess 1","Mariam","O-k.",0
-88,"Princess 3 & 4","Sumeyra","We need a knife.",0
-88,"Princess 3 & 4","Malika G.","We need a knife.",0
-89,"Fairy 3","Roya","Will someone hurry up and cut the cheese?",0
-90,"scene","scene","Knights cut the cheese with their swords. Princess 3 puts it on the pizza and they hide.",0
-91,"Dragon King","Hassan","Somebody brought us pizza.",0
-92,"Little Dragon","Yassin","Yum, yum!",0
-93,"Dragon King","Hassan","Wait! What's this? Cheese! Oohhh!",0
-94,"All Knights","Fouad","Did we hurt them?",0
-94,"All Knights","Mohamed","Did we hurt them?",0
-94,"All Knights","Omar W.","Did we hurt them?",0
-94,"All Knights","Orhan","Did we hurt them?",0
-94,"All Knights","Selim","Did we hurt them?",0
-95,"Dragon King","Hassan","No, we just have REALLY BAD tummy aches.",0
-96,"All Dragons","Hassan","Ow!",100
-96,"All Dragons","Yassin","Ow!",100
-97,"Susie","Aseel","We'll give you this drink if you promise to NEVER take another pretty thing without asking first.",0
-98,"All Dragons","Hassan","We promise.",0
-98,"All Dragons","Yassin","We promise.",0
-99,"Susie","Aseel","Let me shake it up for you.",0
+86,"Fairy 2","Hala","All dragons are lactose intolerant.",0
+87,"scene","scene","All princesses stare at each other with surprise",0
+88,"Princess 1","Mariam","O-k.",0
+89,"Princess 3 & 4","Sumeyra","We need a knife.",0
+89,"Princess 3 & 4","Malika G.","We need a knife.",0
+90,"Fairy 3","Roya","Will someone hurry up and cut the cheese?",0
+91,"scene","scene","Knights cut the cheese with their swords. Princess 3 puts it on the pizza and they hide.",0
+92,"Dragon King","Hassan","Somebody brought us pizza.",0
+93,"Little Dragon","Yassin","Yum, yum!",0
+94,"Dragon King","Hassan","Wait! What's this? Cheese! Ooh!",0
+95,"All Knights","Fouad","Did we hurt them?",0
+95,"All Knights","Mohamed","Did we hurt them?",0
+95,"All Knights","Omar W.","Did we hurt them?",0
+95,"All Knights","Orhan","Did we hurt them?",0
+95,"All Knights","Selim","Did we hurt them?",0
+96,"Dragon King","Hassan","No, we just have REALLY BAD tummy aches.",0
+97,"All Dragons","Hassan","Ow!",100
+97,"All Dragons","Yassin","Ow!",100
+98,"Susie","Aseel","We'll give you this drink if you promise to NEVER take another pretty thing without asking first.",0
+99,"All Dragons","Hassan","We promise.",0
+99,"All Dragons","Yassin","We promise.",0
+100,"Susie","Aseel","Let me shake it up for you.",0

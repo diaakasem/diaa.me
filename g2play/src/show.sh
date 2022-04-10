@@ -37,6 +37,7 @@ do
     for i in $(seq 100); do
       clear
       echo
+      isActor="$(octosql --output csv "select actor from script2.csv where id = $i and actor = '$character'" | uniq | tail +2 | wc -l | tr -d ' ')"
       actor=$(octosql --output csv "select actor from script2.csv where id = $i" | uniq | tail +2)
       char=$(octosql --output csv "select character from script2.csv where id = $i" | uniq | tail +2)
       line=$(octosql --output csv "select line from script2.csv where id = $i" | uniq | tail +2)
@@ -44,21 +45,21 @@ do
       # echo "$char"
       voice="$(voicePick "$char")"
       # echo "$voice"
-      if [[ $actor == $character || $actor == 'All Princesses' ]]; then
+      if [[ "$isActor" == "1" ]]; then
         echo "And You Say.."
         echo
         say -v "Ava" -r "120" "And You Say.."
         echo "        $line"
         sleep 5
         echo
-      elif [[ $actor == "scene" ]]; then
+      elif [[ "$actor" == "scene" ]]; then
         echo
         echo "        $line"
         say -v "$voice" -r "$rate" "$line"
         echo
       else
         echo
-        echo "$char Now Speaking"
+        echo "$char Speaking"
         echo
         echo "        $line"
         echo
