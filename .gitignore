@@ -6,3 +6,4 @@ app/bower_components
 app/components
 *.map
 tags
+.DS_Store
