@@ -7,3 +7,4 @@ app/components
 *.map
 tags
 .DS_Store
+blog/public
