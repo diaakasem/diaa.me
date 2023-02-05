@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: diaa.me
-Token: 63c2541a14bcd183b3d5df3cd53d463067b86608a8797446deb74cbf7ce5f139
