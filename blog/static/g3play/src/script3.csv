@@ -1,29 +1,29 @@
 ID,Student,Character,Group,Sentence,Action,is_group
-1,Mariam,Presenter,,"During the school year, we learned a lot about bullying, the types of bullies, and how to prevent bullying. So, we decided to share what we learned with you. Some students will play the role of bullies to show us that bullies will end up lonely and will want to have friends like everyone else. Other students will show you the many ways we learned to stop bullying.",,0
-2,,Group,Ladies and Gentlemen,"Ladies and gentlemen",,1
-3,,Group,Family and Friends,"Family and friends",,1
-4,,All Students,Welcome to Bullies Anonymous,"Welcome to bullies anonymous",,1
-5,,Everyone,,"Welcome, welcome, Come on in Please join all of us. It's our greeting… To the meeting Bullies Anonymous.",,1
-6,,Everyone,,"Welcome, welcome Don't be shy So much to discuss Lots of seating At the meeting Bullies Anonymous.",,1
-7,,Everyone,,"Woh oh oh oh oh Change your ways Woh oh oh oh oh End your bully days!",,1
-8,,Everyone,,"Welcome, welcome Here we go We won't make a fuss We're repeating once again It's the meeting come on in You'll be glad to say you've been to Bullies Anonymous. You'll be glad to say you've been to Bullies Anooooonymous.",,1
-9,Omay Y.,Student 1,,"Welcome to our weekly meeting of Bullies Anonymous.",,0
-10,Omay Y.,Student 1,,"This is a place where bullies can talk openly so we can all help them stop being so...so… ",,0
-11,Bashir,Student 2,,"So bullish",,0
-12,Omay Y.,Student 1,,"Exactly",,0
-13,Bashir,Student 2,,"So, listen up, you bully.",,0
-14,Roya,Student 3,,"Mmmmmm… Whom are you talking to, Omar?",,0
-15,Omay Y.,Student 1,,"THEM, of course, Roya. Looks like a tough crowd.",,0
-16,Roya,Student 3,,"Oh my no. These are just visitors. (Pointing to the audience) THESE are the bullies. (SHE points to the bullies)",,0
-17,Omar Y.,Student 1 Student Council,,"Welcome to our weekly meeting of Bullies Anonymous.",,0
-18,Bashir,Student 2, Student Council,"So, listen up, you bully.",,0
-19,Roya,Student 3, Student Council,"Oh my no. These are just visitors. (Pointing to the audience) THESE are the bullies. (SHE points to the bullies)",Pointing to the audience,0
-20,Omar Y.,Student 1, Student Council,"Oh, yeah. I see what you mean. They got that look. (shaking his head)",Shaking head,0
-21,Bashir,Student 2, Student Council,"Now Roya we know that there is no one way a bully looks or acts. Bully wants to hurt or control people, but they're all kinds of bullies.",,0
-22,Hassan,Physical Bully,Bullies,"Like me. I'm a physical bully. I like to get in your face.",Throws a punch,0
-23,Moussa,Verbal Bully,Bullies,"Or me--- I'm a verbal bully. I love to pick on kids. It makes me feel so cool. (Looks at a former bully or another student and says: What are you looking at banana face?)",,0
-24,Moussa,Bully A,Bullies,"I told you they had the look. What about those two?",,0
-25,Hassan,Physical Bully,Bullies,"What, them? They couldn't be bullies. Besides, they're not clever.",,0
+1,Mariam,Presenter,Everyone,"During the school year, we learned a lot about bullying, the types of bullies, and how to prevent bullying. So, we decided to share what we learned with you. Some students will play the role of bullies to show us that bullies will end up lonely and will want to have friends like everyone else. Other students will show you the many ways we learned to stop bullying.",,0
+2,,,Group 1,"Ladies and gentlemen",,1
+3,,,Group 2,"Family and friends",,1
+4,,,Everyone,"Welcome to bullies anonymous",,1
+5,,,Everyone,"Welcome, welcome, Come on in Please join all of us. It's our greeting… To the meeting Bullies Anonymous.",Singing,1
+6,,,Everyone,"Welcome, welcome Don't be shy So much to discuss Lots of seating At the meeting Bullies Anonymous.",Singing,1
+7,,,Everyone,"Woh oh oh oh oh Change your ways Woh oh oh oh oh End your bully days!",Singing,1
+8,,,Everyone,"Welcome, welcome Here we go We won't make a fuss We're repeating once again It's the meeting come on in You'll be glad to say you've been to Bullies Anonymous. You'll be glad to say you've been to Bullies Anooooonymous.",Singing,1
+9,Omar Y.,,Student Council,"Welcome to our weekly meeting of Bullies Anonymous.",,0
+10,Omar Y.,,Student Council,"This is a place where bullies can talk openly so we can all help them stop being so...so… ",,0
+11,Bashir,,Student Council,"So bullish",,0
+12,Omar Y.,,Student Council,"Exactly",,0
+13,Bashir,,Student Council,"So, listen up, you bully.",,0
+14,Roya,,Student Council,"Mmmmmm… Whom are you talking to, Omar?",,0
+15,Omar Y.,,Student Council,"THEM, of course, Roya. Looks like a tough crowd.",,0
+16,Roya,,Student Council,"Oh my no. These are just visitors. (Pointing to the audience) THESE are the bullies. (SHE points to the bullies)",,0
+17,Omar Y.,,Student Council,"Welcome to our weekly meeting of Bullies Anonymous.",,0
+18,Bashir,,Student Council,"So, listen up, you bully.",,0
+19,Roya,,Student Council,"Oh my no. These are just visitors. (Pointing to the audience) THESE are the bullies. (SHE points to the bullies)",Pointing to the audience,0
+20,Omar Y.,,Student Council,"Oh, yeah. I see what you mean. They got that look. (shaking his head)",Shaking head,0
+21,Bashir,,Student Council,"Now Roya we know that there is no one way a bully looks or acts. Bully wants to hurt or control people, but they're all kinds of bullies.",,0
+22,Hassan,Physical Bully,Bully,"Like me. I'm a physical bully. I like to get in your face.","Throws a punch",0
+23,Moussa,Verbal Bully,Bully,"Or me--- I'm a verbal bully. I love to pick on kids. It makes me feel so cool.","Looks at a former bully or another student and says: What are you looking at banana face?",0
+24,Moussa,Bully A,Bully,"I told you they had the look. What about those two?",,0
+25,Hassan,Physical Bully,Bully,"What, them? They couldn't be bullies. Besides, they're not clever.",,0
 26,Yassin,Social Bully 1,Social Bully,"Hey, that's discrimination. We have just as much right to be rude as the other boys.",,0
 27,Omar W.,Social Bully 2,Social Bully,"That's right. It's in the Constitution.",,0
 28,Yassin,Social Bully 1,Social Bully,"Like for sure! We're social bullies. Our favorite thing is to spread all kinds of rumors about other girls.",,0
@@ -36,27 +36,27 @@ ID,Student,Character,Group,Sentence,Action,is_group
 35,Moussa,Verbal Bully,Verbal Bully,,Acts like they don't care,0
 36,Omar W.,Social Bully,Social Bully,,"Acts like they don't care",0
 37,Yassin,Social Bully,Social Bully,,"Acts like they don't care",0
-38,,,,The 4 students return back to their seats.,Action,0
-39,Hassan,Physical Bully,Bullies,I keep things simple,Talking,0
-40,Hassan,Physical Bully,Bullies,I shove and punch,Talking,0
-41,Hassan,Physical Bully,Bullies,I break your glasses,Talking,0
-42,Hassan,Physical Bully,Bullies,I steal your lunch.,Talking,0
-43,Hassan,Physical Bully,Bullies,I'm in the hallway,Talking,0
-44,Hassan,Physical Bully,Bullies,And on the stairs,Talking,0
-45,Hassan,Physical Bully,Bullies,I'm in your locker,Talking,0
-46,Hassan,Physical Bully,Bullies,I'm everywhere.,Talking,0
-47,Hassan,Physical Bully,Bullies,Aren't we cool when we're cruel?,Singing,1
-48,Moussa,Verbal Bully,Bullies,I'm into insults,Talking,0
-49,Moussa,Verbal Bully,Bullies,That's what I do,Talking,0
-50,Moussa,Verbal Bully,Bullies,I'll find your weakness,Talking,0
-51,Moussa,Verbal Bully,Bullies,Then pick on you.,Talking,0
-52,Moussa,Verbal Bully,Bullies,I love name-calling.,Talking,0
-53,Moussa,Verbal Bully,Bullies,I know them all.,Talking,0
-54,Moussa,Verbal Bully,Bullies,"And some I'm writing,",Talking,0
-55,Moussa,Verbal Bully,Bullies,"In bathroom stalls.",Talking,0
-56,Moussa,Verbal Bully,Bullies,"Aren't we cool when we're cruel?",Singing,1
-57,,ALL FOUR BULLIES,Bullies,"Aren't we cool when we're cruel?",Singing,1
-58,,ALL FOUR BULLIES,Bullies,"Aren't we cool when we're cruel?",Singing,1
+38,,,,,The 4 students return back to their seats.,1
+39,Hassan,Physical Bully,Bully,I keep things simple,Speak,0
+40,Hassan,Physical Bully,Bully,I shove and punch,Speak,0
+41,Hassan,Physical Bully,Bully,I break your glasses,Speak,0
+42,Hassan,Physical Bully,Bully,I steal your lunch.,Speak,0
+43,Hassan,Physical Bully,Bully,I'm in the hallway,Speak,0
+44,Hassan,Physical Bully,Bully,And on the stairs,Speak,0
+45,Hassan,Physical Bully,Bully,I'm in your locker,Speak,0
+46,Hassan,Physical Bully,Bully,I'm everywhere.,Speak,0
+47,Hassan,Physical Bully,Bully,Aren't we cool when we're cruel?,Singing,1
+48,Moussa,Verbal Bully,Bully,I'm into insults,Speak,0
+49,Moussa,Verbal Bully,Bully,That's what I do,Speak,0
+50,Moussa,Verbal Bully,Bully,I'll find your weakness,Speak,0
+51,Moussa,Verbal Bully,Bully,Then pick on you.,Speak,0
+52,Moussa,Verbal Bully,Bully,I love name-calling.,Speak,0
+53,Moussa,Verbal Bully,Bully,I know them all.,Speak,0
+54,Moussa,Verbal Bully,Bully,"And some I'm writing,",Speak,0
+55,Moussa,Verbal Bully,Bully,"In bathroom stalls.",Speak,0
+56,Moussa,Verbal Bully,Bully,"Aren't we cool when we're cruel?",Singing,1
+57,,ALL FOUR BULLIES,Bully,"Aren't we cool when we're cruel?",Singing,1
+58,,ALL FOUR BULLIES,Bully,"Aren't we cool when we're cruel?",Singing,1
 59,Everyone (except the 4 bullies),,,"You're not cool,",Shakes heads and says 'NO',1
 60,Everyone (except the 4 bullies),,,"You are pathetic.",Shakes heads and says 'NO',1
 61,Everyone (except the 4 bullies),,,"You're not cool,",Shakes heads and says 'NO',1
@@ -65,17 +65,17 @@ ID,Student,Character,Group,Sentence,Action,is_group
 64,Everyone (except the 4 bullies),,,"Not one bit cool.",Shakes heads and says 'NO',1
 65,Everyone (except the 4 bullies),,,"You should quit,",Shakes heads and says 'NO',1
 66,Everyone (except the 4 bullies),,,"Not one bit cool.",Shakes heads and says 'NO',1
-67,Omar W. & Yassin,SOCIAL BULLIES,Bullies,"We make up rumors.",,1
-68,Omar W. & Yassin,SOCIAL BULLIES,Bullies,"We spread the dirt.",,1
-69,Omar W. & Yassin,SOCIAL BULLIES,Bullies,"Then we exclude you.",,1
-70,Omar W. & Yassin,SOCIAL BULLIES,Bullies,"Man, that must hurt.",,1
-71,Omar W. & Yassin,SOCIAL BULLIES,Bullies,"We are all bullies.",,1
-72,Omar W. & Yassin,SOCIAL BULLIES,Bullies,"Bullies unite.",,1
-73,Omar W. & Yassin,SOCIAL BULLIES,Bullies,"We are all bullies.",,1
-74,Omar W. & Yassin,SOCIAL BULLIES,Bullies,"Tell us we're right.",,1
-75,ALL BULLIES,,Bullies,"Aren't we cool when we're cruel?",Shakes heads and says 'NO',1
-76,ALL BULLIES,,Bullies,"Aren't we cool when we're cruel?",Shakes heads and says 'NO',1
-77,ALL BULLIES,,Bullies,"Aren't we cool when we're cruel?",Shakes heads and says 'NO',1
+67,Omar W. & Yassin,SOCIAL BULLIES,Bully,"We make up rumors.",,1
+68,Omar W. & Yassin,SOCIAL BULLIES,Bully,"We spread the dirt.",,1
+69,Omar W. & Yassin,SOCIAL BULLIES,Bully,"Then we exclude you.",,1
+70,Omar W. & Yassin,SOCIAL BULLIES,Bully,"Man, that must hurt.",,1
+71,Omar W. & Yassin,SOCIAL BULLIES,Bully,"We are all bullies.",,1
+72,Omar W. & Yassin,SOCIAL BULLIES,Bully,"Bullies unite.",,1
+73,Omar W. & Yassin,SOCIAL BULLIES,Bully,"We are all bullies.",,1
+74,Omar W. & Yassin,SOCIAL BULLIES,Bully,"Tell us we're right.",,1
+75,ALL BULLIES,,Bully,"Aren't we cool when we're cruel?",Shakes heads and says 'NO',1
+76,ALL BULLIES,,Bully,"Aren't we cool when we're cruel?",Shakes heads and says 'NO',1
+77,ALL BULLIES,,Bully,"Aren't we cool when we're cruel?",Shakes heads and says 'NO',1
 78,Everyone (except the 4 bullies),,,"You're not cool",Shakes heads and says 'NO',0
 79,Everyone (except the 4 bullies),,,"You are pathetic.",Shakes heads and says 'NO',0
 80,Everyone (except the 4 bullies),,,"You're not cool",Shakes heads and says 'NO',0
@@ -84,17 +84,17 @@ ID,Student,Character,Group,Sentence,Action,is_group
 83,Everyone (except the 4 bullies),,,"Not one bit cool.",Shakes heads and says 'NO',0
 84,Everyone (except the 4 bullies),,,"You should quit",Shakes heads and says 'NO',0
 85,Everyone (except the 4 bullies),,,"Not one bit cool.",Shakes heads and says 'NO',0
-86,Omar Y.,Student 2,,You see…. it's actually not cool being a bully. No one else thinks being mean is cool at all.,Speaks,0
-87,Bashir,Student 3,,It's just cruel and hurts both the victim and the bully.,Speaks,0
+86,Omar Y.,Student 1,Student Council,You see…. it's actually not cool being a bully. No one else thinks being mean is cool at all.,Speaks,0
+87,Bashir,Student 2,Student Council,It's just cruel and hurts both the victim and the bully.,Speaks,0
 88,Roya,Student 11,,Hurts the bully!? How's that? It's such a power trip when you're bullying someone and all the kids gather around to watch.,Speaks,0
-89,Hassan,Physical Bully,Bullies,"Oh man, I love that.",Stands up,0
+89,Hassan,Physical Bully,Bully,"Oh man, I love that.",Stands up,0
 90,Youssef,,,"You're right, kids will sometimes do that. But they don't really like you...they're just glad it's not them.",Speaks,0
-91,Moussa,Verbal Bully,Bullies,"Maybe, but an audience is an audience, and I LOVE the attention. Unless someone decides to step in and help the poor kid that I'm picking on.",Stands up and comes forward,0
+91,Moussa,Verbal Bully,Bully,"Maybe, but an audience is an audience, and I LOVE the attention. Unless someone decides to step in and help the poor kid that I'm picking on.",Stands up and comes forward,0
 92,Youssef,,,What happens then?,Speaks,0
-93,Moussa,Verbal Bully,Bullies,It ruins EVERYTHING.,Speaks,0
-94,Hassan,Physical Bully,Bullies,"Man, I HATE that.",Speaks,0
-95,Moussa,Verbal Bully,Bullies,"Let us give you some advice. When you see someone being bullied, just sit back and enjoy the show.",Speaks,0
-96,Hassan,Physical Bully,Bullies,"Sure! Without you watching us being mean, it wouldn't be any fun! Just relax and see us in action.",Speaks,0
+93,Moussa,Verbal Bully,Bully,It ruins EVERYTHING.,Speaks,0
+94,Hassan,Physical Bully,Bully,"Man, I HATE that.",Speaks,0
+95,Moussa,Verbal Bully,Bully,"Let us give you some advice. When you see someone being bullied, just sit back and enjoy the show.",Speaks,0
+96,Hassan,Physical Bully,Bully,"Sure! Without you watching us being mean, it wouldn't be any fun! Just relax and see us in action.",Speaks,0
 98,Bullies Group,Bullies Group,Bullies Group,Don't step in,Holding bullying signs,1
 99,Bullies Group,Bullies Group,Bullies Group,Don't step in,Holding bullying signs,1
 100,Bullies Group,Bullies Group,Bullies Group,Don't step in,Holding bullying signs,1
@@ -126,7 +126,7 @@ ID,Student,Character,Group,Sentence,Action,is_group
 126,Fouad,Student 3,Anti-Bullying Group,Are you sure? Do you all mind taking a little test?,,0
 127,Hassan,Bully,Bullies Group,"Test? Sure, I'll take a test. I can pass any test. Uh…… what kind of test?",,0
 128,Fouad,Student 3,Anti-Bullying Group,It just so happens that a couple of former bullies---now science students---have invented a device that can sniff out bullies a mile away.,,0
-129,Omar W.,Student,Anti-Bullying Group,(shouts) Bring them in!,Shouts,0
+129,Omar W.,Bully,Anti-Bullying Group,Bring them in!,Shouts,0
 130,Former Bully 1,Former Bully,Anti-Bullying Group,"We have created a machine that detects bullies.",,1
 131,Former Bully 2,Former Bully,Anti-Bullying Group,"That's right. We call it a Bullyometer. And if you're a bully, it will tell us.",,1
 132,Hassan,Bully,Bullies Group,"A Bullyometer? OH, I don't like nerds.",,0
@@ -207,17 +207,17 @@ ID,Student,Character,Group,Sentence,Action,is_group
 207,Brother Bully,Brother Bully,Brother Bully,Students return back to their seats.,,1
 208,Verbal bully,Verbal bully & Student 1 BASHIR,Verbal bully,,Verbal bully & Student 1 BASHIR walk to the middle of the stage.,1
 209,Moussa,,,"Hey, you know what bothers me about this Bullies Anonymous meeting?",Speak,0
-210,Bashir,Student 1,,What's that Moussa?,Speak,0
+210,Bashir,Student 2,Student Council,What's that Moussa?,Speak,0
 211,Moussa,,,"Well, it comes off like us bullies are big losers.",Speak,0
-212,Bashir,Student 1,,"Yeah, what's your point?",Speak,0
+212,Bashir,Student 2,Student Council,"Yeah, what's your point?",Speak,0
 213,Moussa,,,"Well, we're not all big losers.",Speak,0
-214,Hassan,Physical Bully,Group,"That's right! Kids fear us, and they respect us. And we got friends just like everyone else.",Speak,1
-215,"Mariam","Social 1-2","Group","You may think that's true, but as you go through the school year, you become less and less popular and will start to lose friends. People start to realize that no one wants a bully as their friend. Bullies become pretty much friendless.","Speak",1
+214,Hassan,Physical Bully,Bully,"That's right! Kids fear us, and they respect us. And we got friends just like everyone else.",Speak,0
+215,"Mariam","Social 1-2","Group","You may think that's true, but as you go through the school year, you become less and less popular and will start to lose friends. People start to realize that no one wants a bully as their friend. Bullies become pretty much friendless.","Speak",0
 216,ALL BULLIES,,Group,,Look at each other surprised,1
 217,Yassin,Yassin,Bullies Anonymous,I don't wanna lose my friends.,Sits in the middle of the stage,0
-218,Omar W.,Omar W.,Bullies Anonymous,"I want to make friends, too.",Sits in the middle of the stage,0
-219,Hassan,Hassan,Bullies Anonymous,I thought I am funny.,Sits down in the middle of the stage,0
-220,Bashir,Bashir,Bullies Anonymous,It's clear now that bullies are not funny or strong.,Sits down in the middle of the stage,0
+218,Omar W.,Bully,Bullies Anonymous,"I want to make friends, too.",Sits in the middle of the stage,0
+219,Hassan,Bully,Bullies Anonymous,I thought I am funny.,Sits down in the middle of the stage,0
+220,Bashir,Student 2,Student Council,It's clear now that bullies are not funny or strong.,Sits down in the middle of the stage,0
 221,Roya,Roya,Bullies Anonymous,You know what guys?,Looks at all the bullies,0
 222,Malika Z.,Malika Z.,Bullies Anonymous,it's not easy being a bully.,,0
 223,All the other Bullies,Bullies Anonymous,,Yeah,shaking their heads and looking at each other,1
@@ -226,12 +226,12 @@ ID,Student,Character,Group,Sentence,Action,is_group
 226,All the other Bullies,Bullies Anonymous,,Yeah…. you're right?,Looking at each other,1
 227,Hassan,Hassan,Bullies Anonymous,You know what guys?,Looks at the other bullies,0
 228,Yassin & Omar,Yassin & Omar,Bullies Anonymous,We don't either.,,0
-229,Ahmed,Ahmed,Bullies Anonymous,"After listening to everyone, bullying doesn't sound cool anymore.",,0
-230,Moussa,Moussa,Bullies Anonymous,I guess you guys are right.,,0
-231,Omar Y. Student 1,Omar Y. Student 1,,"Well, I think we made some excellent progress today.",,0
-232,Youssef Student 2,Youssef Student 2,,There are lots of good reasons not to act like a bully.,,0
+229,Ahmed,Recovering Bully,Bully,"After listening to everyone, bullying doesn't sound cool anymore.",,0
+230,Moussa,Verbal Bully,Bully,I guess you guys are right.,,0
+231,Omar Y.,Student 1,Student Council,"Well, I think we made some excellent progress today.",,0
+232,Youssef,Student 4,Sudent Council,There are lots of good reasons not to act like a bully.,,0
 233,Mariam Student 3,Mariam Student 3,,There are lots of ways to deal with bullies and keep them away.,,0
-234,Roshan Student 4,Roshan Student 4,,Nobody should ever have to put up with bullying.,,0
+234,Roshan,Roshan Student 4,,Nobody should ever have to put up with bullying.,,0
 235,Rokia,Rokia,,"If you see bullying anywhere in school, you should say something.",,0
 236,Farida,Farida,,Tell a teacher or someone who could help.,,0
 237,Sumeyrah,Sumeyrah,,Don't just be a bystander.,,0
