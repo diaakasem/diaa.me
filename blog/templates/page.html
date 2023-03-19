@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" id="zola-blog-css" href="./blog.css" type="text/css" media="all">
+{% endblock head %}
+
+{% block content %}
+
+<header>
+  <h1 class="p20 mb0 bg-#334155 color-white">
+    {{ page.title }}
+  </h1>
+</header>
+
+<section>
+
+  <p class="subtitle"><strong>{{ page.date }}</strong></p>
+
+  {{ page.content | safe }}
+
+</section>
+
+{% endblock content %}
