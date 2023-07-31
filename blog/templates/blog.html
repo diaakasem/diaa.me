@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block head %}
-<link rel="stylesheet" id="zola-blog-css" href="./blog.css" type="text/css" media="all">
+<link rel="stylesheet" id="zola-blog-css" href="/blog.css" type="text/css" media="all">
 {% endblock head %}
 
 {% block content %}
@@ -15,7 +15,9 @@
     {{ section.title }}
   </h1>
 </header>
+
 <section class="md-flex bg-slate-100">
+
   <ul class="leftnav flex-shrink bg-#334155 p10">
     <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->
     {% for page in section.pages %}
@@ -27,8 +29,9 @@
     </li>
     {% endfor %}
   </ul>
-  <section class="blog-section-body content fill hover:m5:hover flex-grow bg-yellow">
 
+  <section class="blog-section-body content fill hover:m5:hover flex-grow bg-yellow">
   </section>
+
 </section>
 {% endblock content %}

@@ -1,6 +1,8 @@
 body {
   flex-direction: column;
+
   header {
+    flex-direction: row;
     display: flex;
     flex: 1 0 auto;
     align-items: stretch;
@@ -11,7 +13,7 @@ body {
       flex: 0 1 auto;
     }
     h1 {
-      flex: 1 1 auto;
+      flex: 1 0 auto;
       color: white;
       // font-size: 3.5em;
       margin: 0;

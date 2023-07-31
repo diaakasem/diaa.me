@@ -7,7 +7,7 @@ where I write markdown files and it generates HTML.
 
 ### To Develop locally
 
-From within `./blog/` dirextory execute:
+From within `./blog/` directory execute:
 
 ```sh
 

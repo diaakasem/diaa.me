@@ -1,3 +1,4 @@
+"The Annual Show":
 ## Intro Scene
 
 * Students are seated as if they are in a meeting:
@@ -15,69 +16,41 @@
 ## Characters
 Students will use their own names
 
---
-
-### Presenters:
 - Mariam
-
---
-
-### Student Council:
+  - Presenter
 - Omar Y.
+  - Student Council:
 - Bashir
+  - Student Council:
 - Roya
+  - Student Council:
 - Youssef
-- Hala
-
---
-
-### Physical Bully:
+  - Student Council:
 - Hassan
-
---
-
-### Verbal Bully:
+  - Physical Bully
 - Moussa
-
---
-
-### Social Bully:
+  - Verbal Bully 
+  - Bully A
 - Yassin
+  - Social Bully
+  - Bully B
 - Omar W.
-
---
-
-### Former Bully:
+  - Social Bully
+  - Brother Bully
 - Farida
+  - Former Bully 1
 - Roshan
-- Rokia
+  - Former Bully 2
 - Mohamed
+  - Former Bully 3
 - Malika Z.
-- Malika G.
-- Hala
-- Sumeyrah
-- Fouad
-
---
-
-### Recovering Bully:
+  - Former Bully 4
 - Ahmed
-
---
-
-### Brother Bully:
-- Mohamed
-
---
-
-### Sister Bully:
-- Malika
-- Roshan
-
---
-
-### Late Students (has a bowling ball):
+  - Recovering Bully
+- Malika G.
+  - Sister Bully
 - Selim
+  - Late Students (has a bowling ball):
 
 ---
 
