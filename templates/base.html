@@ -1,36 +1,55 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
-  <meta name="p:domain_verify" content="196a16ded2c542dacee4eb88a37d09c4" />
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="UTF-8">
-  <title>Diaa Kasem | Senior Software Engineer</title>
-  <meta name="description" content="Diaa Kasem, Senior Software Engineer">
-  <meta name="author" content="Diaa Kasem">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Diaa Kasem | Senior Software Engineer{% endblock %}</title>
+
+  {% block head %}
+  <meta name="p:domain_verify" content="196a16ded2c542dacee4eb88a37d09c4" />
   <link rel='shortcut icon' href='/images/favicon.ico'>
   <link rel='apple-touch-icon' href='/images/apple-touch-icon.png'>
   <link rel='apple-touch-icon' sizes='72x72' href='./images/apple-touch-icon-72x72.png'>
   <link rel='apple-touch-icon' sizes='114x114' href='/images/apple-touch-icon-114x114.png'>
-  
+
   <link rel="stylesheet" id="o-responsive-css" href="/css/o-responsive.css" type="text/css" media="all">
   <link rel="stylesheet" id="themestyle-css" href="/style.css" type="text/css" media="all">
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900,300italic,400italic,900italic' rel='stylesheet' type='text/css'>
-
-  {% block head %} {% endblock %}
+  <style>
+    #header .blog-link {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #fff;
+      z-index: 10000;
+      cursor: pointer;
+    }
+    #header .container.wrap.text-center {
+      /* click through to the blog */
+      pointer-events: none;
+    }
+  </style>
+  {% endblock %}
 </head>
 
 <body class="fullwidth boxed" data-device="" data-maxcols="">
+  <div id="header">
+    <div class="container wrap text-center">
+      <span class="">Diaa Kasem</span>
+      <span class=""> Senior Software Engineer at <a href="http://www.meetsoci.com/">SOCi</a>. </span>
+    </div>
+    <span class="clear"></span>
+  </div>
+
   <section class="section main-body-container">
-    {% block content %} {% endblock %}
+    {% block content %}{% endblock %}
   </section>
-  
+
   <div id="copyright">
     <div class="container wrap">
       <div class="row">
         <div class="col dimfull text-center">
-          <p>&copy; 2025 <em> Diaa Mohamed Kasem</em>.</p>
+          <p>&copy; {{ now() | date(format="%Y") }} <em> Diaa Mohamed Kasem</em>.</p>
         </div>
       </div>
     </div>

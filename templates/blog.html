@@ -1,31 +1,46 @@
 {% extends "base.html" %}
 
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+<style>
+  :root {
+    --primary: #ff6760;
+    --primary-hover: #ff5a52;
+  }
+</style>
+{% endblock %}
+
 {% block content %}
-<div class="container">
+<main class="container">
   <header>
-    <div class="image-container">
-      <img src="http://www.gravatar.com/avatar/dd383cf768b558e28f7753a1014b82a0?s=200" alt="image"
-      class="rounded-full">
-    </div>
-    <h1 class="p20 mb0 bg-#334155 color-white">
-      {{ section.title }}
-    </h1>
+    <hgroup>
+      <h1>{{ section.title }}</h1>
+      <p>Exploring thoughts, ideas, and experiences</p>
+    </hgroup>
   </header>
 
-  <section class="md-flex bg-slate-100">
-    <ul class="leftnav flex-shrink bg-#334155 p10">
-      {% for page in section.pages %}
-      <li class="
-                 p10 pt5 pb5 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4
-                 m-6
-                 ">
-        <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-
-    <section class="blog-section-body content fill hover:m5:hover flex-grow bg-yellow">
+  <div class="grid">
+    <section>
+      <h2>Recent Posts</h2>
+      <ul>
+        {% for page in section.pages %}
+        <li>
+          <article>
+            <header>
+              <a href="{{ page.permalink | safe }}">
+                <h3>{{ page.title }}</h3>
+              </a>
+              <small>{{ page.date | date(format="%B %d, %Y") }}</small>
+            </header>
+            {% if page.summary %}
+            <p>{{ page.summary }}</p>
+            {% endif %}
+          </article>
+        </li>
+        {% endfor %}
+      </ul>
     </section>
-  </section>
-</div>
-{% endblock content %}
+  </div>
+</main>
+{% endblock %}
