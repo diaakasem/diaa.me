@@ -1,5 +1,13 @@
 dev:
-  pushd ./blog && zola serve
+    zola serve
+
+build:
+    zola build
+
+clean:
+    rm -rf public
 
 deploy:
-  ./sync-s3.sh
+    ./sync-s3.sh
+
+release: build deploy

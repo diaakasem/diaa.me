@@ -1,34 +1,112 @@
-# Zola
+# Diaa Kasem - Personal Portfolio and Blog
 
-## Description
+## Project Overview
 
-Started using Zola Static Site Generator (SSG) to be able to have a blog,
-where I write markdown files and it generates HTML.
+A modern, static personal portfolio and blog site built with:
+- [Zola](https://www.getzola.org/) - Static Site Generator
+- [UnoCSS](https://unocss.dev/) - On-demand Atomic CSS Engine
+- [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling
+- [pnpm](https://pnpm.io/) - Fast, disk-space efficient package manager
 
-### To Develop locally
+## Prerequisites
 
-From within `./blog/` directory execute:
+- [Rust](https://www.rust-lang.org/) (for Zola)
+- [Node.js](https://nodejs.org/) (v16+ recommended)
+- [pnpm](https://pnpm.io/)
+- [Zola](https://www.getzola.org/documentation/getting-started/installation/)
 
-```sh
-
-zola serve
+## Project Structure
 
 ```
+.
+├── blog/             # Zola content and templates
+│   ├── content/      # Markdown content
+│   ├── templates/    # HTML templates
+│   └── static/       # Static assets
+├── src/              # Source files for Vite
+├── uno.config.ts     # UnoCSS configuration
+├── vite.config.ts    # Vite configuration
+└── package.json      # Project dependencies and scripts
+```
 
-### To Build
+## Setup and Installation
 
+1. Clone the repository
+   ```bash
+   git clone https://github.com/diaakasem/diaa.me.git
+   cd diaa-portfolio
+   ```
+
+2. Install dependencies
+   ```bash
+   pnpm install
+   ```
+
+## Development Workflow
+
+### Development Server
+Run the development server with live reloading:
 ```bash
-
-zola build
-
+pnpm run dev
 ```
 
-### To Deploy
-
-From git root directory `gr`, execute the following script to sync to S3
-
+### Build for Production
+Generate static files for production:
 ```bash
-
-./sync-s3.sh
-
+pnpm run build
 ```
+
+### Preview Production Build
+Test the production build locally:
+```bash
+pnpm run preview
+```
+
+## Project Technologies
+
+### Static Site Generation
+- **Zola**: A fast static site generator written in Rust
+- Supports Markdown content
+- Jinja2-like templating
+- Built-in asset processing
+
+### Styling
+- **UnoCSS**: On-demand atomic CSS engine
+- Utility-first CSS approach
+- Zero-runtime, performance-focused
+- Highly customizable
+
+### Build Tooling
+- **Vite**: Next-generation frontend tooling
+- Extremely fast development server
+- Optimized production builds
+- Plugin-based architecture
+
+### Package Management
+- **pnpm**: Fast, disk-space efficient package manager
+- Saves disk space through hard linking
+- Faster than npm and Yarn
+
+## Customization
+
+- Modify `uno.config.ts` to customize UnoCSS
+- Update `vite.config.ts` for build configurations
+- Edit Zola templates in `blog/templates/`
+- Add content in `blog/content/`
+
+## Deployment
+
+The site can be deployed to various static hosting platforms:
+- Netlify
+- Vercel
+- GitHub Pages
+- AWS S3
+
+Typical deployment involves running `pnpm run build` and deploying the `public/` directory.
+
+## Contact
+
+Diaa Kasem
+- Email: [me@diaa.me]
+- Website: [diaa.me]
+- LinkedIn: [linkedin.com/in/diaakasem]
