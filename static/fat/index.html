@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Loss Journey - 140kg to 80kg in 8 Months</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="text-center py-8">
+            <h1 class="text-4xl font-bold text-indigo-700 mb-2">Your Weight Loss Journey</h1>
+            <p class="text-xl text-gray-600">From 140kg to 80kg in 8 months</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="card col-span-2">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-2xl font-bold">Your Dashboard</h2>
+                    <div class="text-sm">
+                        <span id="current-date" class="font-medium"></span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 mb-4">
+                    <div class="bg-indigo-50 p-4 rounded-lg">
+                        <div class="text-lg text-indigo-700 mb-1">Current Weight</div>
+                        <div class="text-3xl font-bold" id="current-weight">140 kg</div>
+                        <div class="text-sm text-gray-500 mt-1">Last updated: <span id="last-weight-update">Today</span></div>
+                    </div>
+
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <div class="text-lg text-green-700 mb-1">Target Weight</div>
+                        <div class="text-3xl font-bold">80 kg</div>
+                        <div class="text-sm text-gray-500 mt-1">Goal date: <span id="goal-date"></span></div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <div class="flex justify-between mb-1">
+                        <div class="font-medium">Progress Toward Goal</div>
+                        <div><span id="weight-lost">0</span> of 60 kg lost</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="weight-progress" style="width: 0%">0%</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 mt-6">
+                    <div class="border border-gray-200 rounded-lg p-3">
+                        <div class="flex items-center">
+                            <div class="text-indigo-600 mr-3">
+                                <i class="fas fa-fire fa-2x"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-500">Daily Calorie Goal</div>
+                                <div class="text-xl font-bold" id="daily-calorie-goal">1800</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg p-3">
+                        <div class="flex items-center">
+                            <div class="text-indigo-600 mr-3">
+                                <i class="fas fa-weight fa-2x"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-500">Weekly Loss Goal</div>
+                                <div class="text-xl font-bold">1.8 kg/week</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="text-2xl font-bold mb-4">Today's Summary</h2>
+                <div class="mb-4">
+                    <div class="flex justify-between mb-1">
+                        <div class="font-medium">Calories Consumed</div>
+                        <div><span id="calories-consumed">0</span> / <span id="calorie-goal">1800</span></div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="calorie-progress" style="width: 0%">0%</div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <div class="flex justify-between mb-1">
+                        <div class="font-medium">Activity Goal</div>
+                        <div><span id="activity-completed">0</span> / <span id="activity-goal">30</span> min</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="activity-progress" style="width: 0%">0%</div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <div class="flex justify-between mb-1">
+                        <div class="font-medium">Water Intake</div>
+                        <div><span id="water-consumed">0</span> / 8 glasses</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="water-progress" style="width: 0%">0%</div>
+                    </div>
+                </div>
+
+                <div class="mt-6">
+                    <button id="log-weight-btn" class="btn btn-primary w-full mb-2">Log Today's Weight</button>
+                    <button id="reset-day-btn" class="btn btn-secondary w-full">Reset Today's Data</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex mb-4 overflow-x-auto">
+            <div class="tab active" data-tab="tracking">Tracking</div>
+            <div class="tab" data-tab="meals">Meal Planner</div>
+            <div class="tab" data-tab="activities">Activity Planner</div>
+            <div class="tab" data-tab="analysis">Analysis & Feedback</div>
+            <div class="tab" data-tab="progress">Progress Charts</div>
+            <div class="tab" data-tab="settings">Settings</div>
+        </div>
+
+        <!-- Tracking Tab -->
+        <div id="tracking" class="tab-content active">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card">
+                    <h3 class="text-xl font-bold mb-4">Log Your Meals</h3>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">Select Meal Type</label>
+                        <select id="meal-type" class="w-full p-2 border border-gray-300 rounded">
+                            <option value="breakfast">Breakfast</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="dinner">Dinner</option>
+                            <option value="snack">Snack</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">Search Food Item</label>
+                        <div class="flex">
+                            <input type="text" id="food-search" class="flex-grow p-2 border border-gray-300 rounded-l" placeholder="Search for a food...">
+                            <button id="search-food-btn" class="bg-indigo-600 text-white px-4 rounded-r">Search</button>
+                        </div>
+                    </div>
+
+                    <div class="mb-4" id="food-search-results" style="max-height: 200px; overflow-y: auto; display: none;">
+                        <!-- Search results will appear here -->
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">Quick Add</label>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div class="meal-item p-2 border border-gray-200 rounded text-center" data-name="Oatmeal with Berries" data-calories="250">
+                                <div class="font-medium">Oatmeal with Berries</div>
+                                <div class="text-sm text-gray-500">250 calories</div>
+                            </div>
+                            <div class="meal-item p-2 border border-gray-200 rounded text-center" data-name="Grilled Chicken Salad" data-calories="350">
+                                <div class="font-medium">Grilled Chicken Salad</div>
+                                <div class="text-sm text-gray-500">350 calories</div>
+                            </div>
+                            <div class="meal-item p-2 border border-gray-200 rounded text-center" data-name="Salmon with Vegetables" data-calories="420">
+                                <div class="font-medium">Salmon with Vegetables</div>
+                                <div class="text-sm text-gray-500">420 calories</div>
+                            </div>
+                            <div class="meal-item p-2 border border-gray-200 rounded text-center" data-name="Greek Yogurt" data-calories="150">
+                                <div class="font-medium">Greek Yogurt</div>
+                                <div class="text-sm text-gray-500">150 calories</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="today-meals" class="mb-4">
+                        <h4 class="font-bold mb-2">Today's Meals</h4>
+                        <ul id="meals-list" class="list-disc pl-5">
+                            <!-- Meals will be added here -->
+                        </ul>
+                    </div>
+
+                    <div class="mt-4">
+                        <button id="add-water-btn" class="btn btn-secondary">
+                            <i class="fas fa-tint mr-1"></i> Add Water Glass
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-xl font-bold mb-4">Log Your Activities</h3>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">Activity Type</label>
+                        <select id="activity-type" class="w-full p-2 border border-gray-300 rounded">
+                            <option value="walking">Walking</option>
+                            <option value="jogging">Jogging</option>
+                            <option value="swimming">Swimming</option>
+                            <option value="cycling">Cycling</option>
+                            <option value="strength">Strength Training</option>
+                            <option value="yoga">Yoga</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">Duration (minutes)</label>
+                        <input type="number" id="activity-duration" class="w-full p-2 border border-gray-300 rounded" min="1" value="30">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">Intensity</label>
+                        <div class="flex space-x-2">
+                            <button class="intensity-btn btn flex-1" data-intensity="low">Low</button>
+                            <button class="intensity-btn btn flex-1" data-intensity="medium">Medium</button>
+                            <button class="intensity-btn btn flex-1" data-intensity="high">High</button>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <button id="log-activity-btn" class="btn btn-primary w-full">Log Activity</button>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">Recommended Activities (Based on your profile)</label>
+                        <div class="grid grid-cols-1 gap-2">
+                            <div class="activity-item p-3 border border-gray-200 rounded" data-name="Walking" data-duration="30" data-intensity="medium">
+                                <div class="font-medium">Walking</div>
+                                <div class="text-sm text-gray-500">30 minutes, Medium intensity</div>
+                                <div class="text-xs text-green-600">Good for beginners, low impact</div>
+                            </div>
+                            <div class="activity-item p-3 border border-gray-200 rounded" data-name="Swimming" data-duration="20" data-intensity="medium">
+                                <div class="font-medium">Swimming</div>
+                                <div class="text-sm text-gray-500">20 minutes, Medium intensity</div>
+                                <div class="text-xs text-green-600">Low impact, full-body workout</div>
+                            </div>
+                            <div class="activity-item p-3 border border-gray-200 rounded" data-name="Strength Training" data-duration="15" data-intensity="low">
+                                <div class="font-medium">Beginner Strength Training</div>
+                                <div class="text-sm text-gray-500">15 minutes, Low intensity</div>
+                                <div class="text-xs text-green-600">Builds muscle, increases metabolism</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="today-activities">
+                        <h4 class="font-bold mb-2">Today's Activities</h4>
+                        <ul id="activities-list" class="list-disc pl-5">
+                            <!-- Activities will be added here -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Meal Planner Tab -->
+        <div id="meals" class="tab-content">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card col-span-2">
+                    <h3 class="text-xl font-bold mb-4">Weekly Meal Plan</h3>
+                    <p class="mb-4 text-gray-600">Your personalized meal plan based on your calorie goal of <span id="meal-plan-calories">1800</span> calories per day.</p>
+
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead>
+                                <tr>
+                                    <th>Meal</th>
+                                    <th>Monday</th>
+                                    <th>Tuesday</th>
+                                    <th>Wednesday</th>
+                                    <th>Thursday</th>
+                                    <th>Friday</th>
+                                    <th>Saturday</th>
+                                    <th>Sunday</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="font-medium">Breakfast</td>
+                                    <td>Oatmeal with berries (250 cal)</td>
+                                    <td>Greek yogurt with honey (220 cal)</td>
+                                    <td>Veggie omelette (280 cal)</td>
+                                    <td>Whole grain toast with avocado (260 cal)</td>
+                                    <td>Protein smoothie (230 cal)</td>
+                                    <td>Overnight oats (270 cal)</td>
+                                    <td>Egg white scramble (240 cal)</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-medium">Lunch</td>
+                                    <td>Grilled chicken salad (350 cal)</td>
+                                    <td>Tuna wrap (370 cal)</td>
+                                    <td>Quinoa bowl (390 cal)</td>
+                                    <td>Lentil soup with side salad (320 cal)</td>
+                                    <td>Turkey and veggie sandwich (360 cal)</td>
+                                    <td>Chicken and vegetable stir-fry (380 cal)</td>
+                                    <td>Mediterranean salad (340 cal)</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-medium">Dinner</td>
+                                    <td>Baked salmon with vegetables (420 cal)</td>
+                                    <td>Turkey meatballs with zucchini noodles (400 cal)</td>
+                                    <td>Grilled tofu with quinoa (380 cal)</td>
+                                    <td>Lean beef stir-fry (430 cal)</td>
+                                    <td>Baked cod with roasted vegetables (390 cal)</td>
+                                    <td>Chicken breast with sweet potato (410 cal)</td>
+                                    <td>Shrimp and veggie kebabs (370 cal)</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-medium">Snacks</td>
+                                    <td>Apple and almonds (150 cal)</td>
+                                    <td>Carrot sticks with hummus (130 cal)</td>
+                                    <td>Greek yogurt (150 cal)</td>
+                                    <td>Protein bar (180 cal)</td>
+                                    <td>Mixed berries (100 cal)</td>
+                                    <td>Cottage cheese with pineapple (140 cal)</td>
+                                    <td>Hard-boiled eggs (140 cal)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-xl font-bold mb-4">Nutritional Guidelines</h3>
+
+                    <div class="mb-4">
+                        <h4 class="font-medium mb-2">Daily Nutritional Targets</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <div class="text-sm text-gray-500">Protein</div>
+                                <div class="text-lg font-bold">150g</div>
+                                <div class="progress-bar mt-1 h-2">
+                                    <div class="progress-fill" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-500">Carbs</div>
+                                <div class="text-lg font-bold">150g</div>
+                                <div class="progress-bar mt-1 h-2">
+                                    <div class="progress-fill" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-500">Fat</div>
+                                <div class="text-lg font-bold">60g</div>
+                                <div class="progress-bar mt-1 h-2">
+                                    <div class="progress-fill" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-500">Fiber</div>
+                                <div class="text-lg font-bold">30g</div>
+                                <div class="progress-bar mt-1 h-2">
+                                    <div class="progress-fill" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-medium mb-2">Foods to Focus On</h4>
+                        <ul class="list-disc pl-5">
+                            <li>Lean proteins (chicken, turkey, fish, tofu)</li>
+                            <li>Whole grains (brown rice, quinoa, oats)</li>
+                            <li>Fruits and vegetables</li>
+                            <li>Healthy fats (avocado, nuts, olive oil)</li>
+                            <li>Low-fat dairy or alternatives</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-medium mb-2">Foods to Limit</h4>
+                        <ul class="list-disc pl-5">
+                            <li>Processed foods high in sodium</li>
+                            <li>Sugary drinks and desserts</li>
+                            <li>Refined carbohydrates</li>
+                            <li>Fried foods</li>
+                            <li>Alcohol</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-medium mb-2">Hydration Goal</h4>
+                        <p>Aim for 8-10 glasses of water daily (2-2.5 liters)</p>
+                    </div>
+
+                    <div class="mt-6">
+                        <button id="customize-meal-plan-btn" class="btn btn-primary w-full">Customize Meal Plan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity Planner Tab -->
+        <div id="activities" class="tab-content">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card col-span-2">
+                    <h3 class="text-xl font-bold mb-4">Weekly Activity Plan</h3>
+                    <p class="mb-4 text-gray-600">Your personalized exercise plan based on your current weight (140kg) and goals.</p>
+
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th>Activity</th>
+                                    <th>Duration</th>
+                                    <th>Intensity</th>
+                                    <th>Calories Burned</th>
+                                    <th>Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday</td>
+                                    <td>Walking</td>
+                                    <td>30 min</td>
+                                    <td><span class="tag tag-low">Low</span></td>
+                                    <td>180 cal</td>
+                                    <td>Start with a comfortable pace</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday</td>
+                                    <td>Swimming</td>
+                                    <td>20 min</td>
+                                    <td><span class="tag tag-medium">Medium</span></td>
+                                    <td>200 cal</td>
+                                    <td>Low impact, great for joints</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                    <td>Rest/Stretching</td>
+                                    <td>15 min</td>
+                                    <td><span class="tag tag-low">Low</span></td>
+                                    <td>50 cal</td>
+                                    <td>Focus on recovery</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday</td>
+                                    <td>Light Strength Training</td>
+                                    <td>20 min</td>
+                                    <td><span class="tag tag-medium">Medium</span></td>
+                                    <td>160 cal</td>
+                                    <td>Focus on form, use light weights</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                    <td>Walking</td>
+                                    <td>35 min</td>
+                                    <td><span class="tag tag-low">Low</span></td>
+                                    <td>210 cal</td>
+                                    <td>Try to increase pace slightly</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday</td>
+                                    <td>Swimming or Water Aerobics</td>
+                                    <td>25 min</td>
+                                    <td><span class="tag tag-medium">Medium</span></td>
+                                    <td>250 cal</td>
+                                    <td>Focus on continuous movement</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday</td>
+                                    <td>Rest/Light Activity</td>
+                                    <td>Flexible</td>
+                                    <td><span class="tag tag-low">Low</span></td>
+                                    <td>Varies</td>
+                                    <td>Active recovery, maybe a short walk</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="mt-6">
+                        <h4 class="font-medium mb-2">Weekly Progress</h4>
+                        <div class="weekly-progress">
+                            <div class="day-progress">
+                                <div class="day-circle day-future">M</div>
+                                <div class="text-xs">Mon</div>
+                            </div>
+                            <div class="day-progress">
+                                <div class="day-circle day-future">T</div>
+                                <div class="text-xs">Tue</div>
+                            </div>
+                            <div class="day-progress">
+                                <div class="day-circle day-future">W</div>
+                                <div class="text-xs">Wed</div>
+                            </div>
+                            <div class="day-progress">
+                                <div class="day-circle day-future">T</div>
+                                <div class="text-xs">Thu</div>
+                            </div>
+                            <div class="day-progress">
+                                <div class="day-circle day-future">F</div>
+                                <div class="text-xs">Fri</div>
+                            </div>
+                            <div class="day-progress">
+                                <div class="day-circle day-future">S</div>
+                                <div class="text-xs">Sat</div>
+                            </div>
+                            <div class="day-progress">
+                                <div class="day-circle day-future">S</div>
+                                <div class="text-xs">Sun</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-xl font-bold mb-4">Activity Recommendations</h3>
+
+                    <div class="mb-4">
+                        <h4 class="font-medium mb-2">Start Slow & Be Consistent</h4>
+                        <p class="text-gray-600 mb-2">Based on your current weight of 140kg, it's important to start with gentle, low-impact exercises to protect your joints.</p>
+                        <ul class="list-disc pl-5 mb-4">
+                            <li>Aim for 150 minutes of activity per week</li>
+                            <li>Break exercise into 10-15 minute sessions if needed</li>
+                            <li>Focus on consistency rather than intensity</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-medium mb-2">Recommended Activities</h4>
+                        <div class="grid grid-cols-1 gap-2">
+                            <div class="p-3 border border-gray-200 rounded">
+                                <div class="font-medium">Walking</div>
+                                <div class="text-sm text-gray-500">Start with 10-15 minutes, gradually increase</div>
+                                <div class="text-xs text-green-600">Easy on joints, can be done anywhere</div>
+                            </div>
+                            <div class="p-3 border border-gray-200 rounded">
+                                <div class="font-medium">Swimming/Water Exercise</div>
+                                <div class="text-sm text-gray-500">20-30 minutes, 2-3 times per week</div>
+                                <div class="text-xs text-green-600">Excellent low-impact, full-body workout</div>
+                            </div>
+                            <div class="p-3 border border-gray-200 rounded">
+                                <div class="font-medium">Gentle Strength Training</div>
+                                <div class="text-sm text-gray-500">15-20 minutes, 2 times per week</div>
+                                <div class="text-xs text-green-600">Helps build muscle, increases metabolism</div>
+                            </div>
+                            <div class="p-3 border border-gray-200 rounded">
+                                <div class="font-medium">Seated Exercises</div>
+                                <div class="text-sm text-gray-500">10-15 minutes daily</div>
+                                <div class="text-xs text-green-600">Good for mobility and starting out</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-medium mb-2">Progression Plan</h4>
+                        <p class="text-gray-600">As you lose weight and build fitness:</p>
+                        <ul class="list-disc pl-5">
+                            <li>Month 1-2: Focus on building habit and routine</li>
+                            <li>Month 3-4: Gradually increase duration by 5 minutes</li>
+                            <li>Month 5-6: Begin to increase intensity slightly</li>
+                            <li>Month 7-8: Add more variety to workouts</li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-6">
+                        <button id="customize-activity-plan-btn" class="btn btn-primary w-full">Customize Activity Plan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Analysis & Feedback Tab -->
+        <div id="analysis" class="tab-content">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card">
+                    <h3 class="text-xl font-bold mb-4">Behavior Analysis</h3>
+
+                    <div class="mb-4" id="behavior-feedback-container">
+                        <div class="feedback-card feedback-good p-3 mb-3">
+                            <h4 class="font-medium">Great Job!</h4>
+                            <p>You've been consistent with your daily water intake goals.</p>
+                        </div>
+
+                        <div class="feedback-card feedback-warning p-3 mb-3">
+                            <h4 class="font-medium">Opportunity for Improvement</h4>
+                            <p>Your activity levels on weekends are significantly lower. Try to maintain consistency throughout the week.</p>
+                        </div>
+
+                        <div class="feedback-card feedback-bad p-3 mb-3">
+                            <h4 class="font-medium">Area of Concern</h4>
+                            <p>Late night snacking detected in your meal patterns. This may be affecting your progress.</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-medium mb-2">Meal Pattern Analysis</h4>
+                        <canvas id="meal-pattern-chart" height="200"></canvas>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-medium mb-2">Activity Consistency</h4>
+                        <canvas id="activity-consistency-chart" height="200"></canvas>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-xl font-bold mb-4">Adaptive Recommendations</h3>
+
+                    <div class="mb-4" id="adaptive-recommendations">
+                        <div class="p-3 border-l-4 border-indigo-500 bg-indigo-50 mb-3">
+                            <h4 class="font-medium text-indigo-700">Calorie Adjustment</h4>
+                            <p class="text-gray-700">Based on your progress, we've adjusted your daily calorie target to 1800 calories (previously 2000).</p>
+                        </div>
+
+                        <div class="p-3 border-l-4 border-indigo-500 bg-indigo-50 mb-3">
+                            <h4 class="font-medium text-indigo-700">Activity Suggestion</h4>
+                            <p class="text-gray-700">Try adding 5 minutes to your walking sessions this week to continue challenging yourself.</p>
+                        </div>
+
+                        <div class="p-3 border-l-4 border-indigo-500 bg-indigo-50 mb-3">
+                            <h4 class="font-medium text-indigo-700">Meal Timing</h4>
+                            <p class="text-gray-700">Consider having your last meal of the day before 7 PM to improve your metabolism and sleep quality.</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-medium mb-2">Weight Loss Projection</h4>
+                        <canvas id="weight-projection-chart" height="200"></canvas>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-medium mb-2">Your Achievements</h4>
+                        <div class="flex flex-wrap justify-center">
+                            <div class="achievement-badge">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="achievement-badge">
+                                <i class="fas fa-shoe-prints"></i>
+                            </div>
+                            <div class="achievement-badge badge-locked">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="achievement-badge badge-locked">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="achievement-badge badge-locked">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <button id="get-personalized-tips-btn" class="btn btn-primary w-full">Get Personalized Tips</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Charts Tab -->
+        <div id="progress" class="tab-content">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card">
+                    <h3 class="text-xl font-bold mb-4">Weight Progress Chart</h3>
+                    <canvas id="weight-chart" height="300"></canvas>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-xl font-bold mb-4">Measurement Tracking</h3>
+                    <div class="mb-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-gray-700 mb-1">Waist (cm)</label>
+                                <input type="number" id="waist-measurement" class="w-full p-2 border border-gray-300 rounded" placeholder="Enter measurement">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-1">Hip (cm)</label>
+                                <input type="number" id="hip-measurement" class="w-full p-2 border border-gray-300 rounded" placeholder="Enter measurement">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-1">Chest (cm)</label>
+                                <input type="number" id="chest-measurement" class="w-full p-2 border border-gray-300 rounded" placeholder="Enter measurement">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-1">Thigh (cm)</label>
+                                <input type="number" id="thigh-measurement" class="w-full p-2 border border-gray-300 rounded" placeholder="Enter measurement">
+                            </div>
+                        </div>
+                        <button id="save-measurements-btn" class="btn btn-primary w-full mt-4">Save Measurements</button>
+                    </div>
+                    <canvas id="measurements-chart" height="250"></canvas>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-xl font-bold mb-4">Caloric Balance</h3>
+                    <canvas id="calorie-balance-chart" height="300"></canvas>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-xl font-bold mb-4">Activity Progress</h3>
+                    <canvas id="activity-progress-chart" height="300"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings Tab -->
+        <div id="settings" class="tab-content">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card">
+                    <h3 class="text-xl font-bold mb-4">Personal Information</h3>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-1">Starting Weight</label>
+                        <input type="number" id="starting-weight" class="w-full p-2 border border-gray-300 rounded" value="140">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-1">Target Weight</label>
+                        <input type="number" id="target-weight" class="w-full p-2 border border-gray-300 rounded" value="80">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-1">Height (cm)</label>
+                        <input type="number" id="height" class="w-full p-2 border border-gray-300 rounded" placeholder="Enter your height">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-1">Age</label>
+                        <input type="number" id="age" class="w-full p-2 border border-gray-300 rounded" placeholder="Enter your age">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-1">Gender</label>
+                        <select id="gender" class="w-full p-2 border border-gray-300 rounded">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-1">Activity Level</label>
+                        <select id="activity-level" class="w-full p-2 border border-gray-300 rounded">
+                            <option value="sedentary">Sedentary (little or no exercise)</option>
+                            <option value="light">Lightly active (1-3 days/week)</option>
+                            <option value="moderate">Moderately active (3-5 days/week)</option>
+                            <option value="active">Very active (6-7 days/week)</option>
+                            <option value="extremely">Extremely active (physical job/training twice/day)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-xl font-bold mb-4">App Settings</h3>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">Daily Calorie Goal</label>
+                        <input type="number" id="calorie-goal-setting" class="w-full p-2 border border-gray-300 rounded" value="1800">
+                        <div class="text-sm text-gray-500 mt-1">Recommended range: 1600-2200 calories</div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">Weekly Weight Loss Goal</label>
+                        <select id="weekly-goal" class="w-full p-2 border border-gray-300 rounded">
+                            <option value="0.5">0.5 kg per week (conservative)</option>
+                            <option value="1">1 kg per week (moderate)</option>
+                            <option value="1.5">1.5 kg per week (aggressive)</option>
+                            <option value="2" selected>2 kg per week (very aggressive)</option>
+                        </select>
+                        <div class="text-sm text-gray-500 mt-1">Your current goal of 60kg in 8 months requires ~1.8kg/week</div>
+                    </div>
+
+                    <div class="mb-6">
+                        <h4 class="font-medium mb-2">Notifications</h4>
+                        <div class="flex items-center justify-between mb-2">
+                            <span>Reminder to log meals</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span>Reminder to log activities</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span>Weekly progress summary</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-medium mb-2">Data Management</h4>
+                        <button id="export-data-btn" class="btn btn-secondary w-full mb-2">Export Your Data</button>
+                        <button id="reset-data-btn" class="btn btn-secondary w-full">Reset All Data</button>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-medium mb-2">Preferences</h4>
+                        <div class="mb-2">
+                            <label class="block text-gray-700 mb-1">Measurement Units</label>
+                            <select id="measurement-units" class="w-full p-2 border border-gray-300 rounded">
+                                <option value="metric" selected>Metric (kg, cm)</option>
+                                <option value="imperial">Imperial (lb, in)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center mt-6">
+                <button id="save-settings-btn" class="btn btn-primary px-8 py-3">Save All Settings</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Weight Log Modal -->
+    <div id="weight-log-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg p-6 max-w-md w-full">
+            <h3 class="text-xl font-bold mb-4">Log Today's Weight</h3>
+            <div class="mb-4">
+                <label class="block text-gray-700 mb-2">Weight (kg)</label>
+                <input type="number" id="weight-input" class="w-full p-2 border border-gray-300 rounded" step="0.1">
+            </div>
+            <div class="flex justify-end">
+                <button id="cancel-weight-btn" class="btn btn-secondary mr-2">Cancel</button>
+                <button id="save-weight-btn" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
