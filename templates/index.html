@@ -2,29 +2,32 @@
 {% block content %}
 
 <div id="top"></div>
-<div id="header">
-  <a href="/blog" class="blog-link">Blog</a>
-  <div class="container wrap text-center">
-    <span class="">Diaa Kasem </span>
-    <span class=""> Senior Software Engineer at <a href="http://www.meetsoci.com/">SOCi</a>. </span>
-  </div>
-  <span class="clear"></span>
-</div>
-<div id="home" class="sugar-container">
+<section id="home" class="sugar-container" aria-labelledby="home-heading">
   <div class="container wrap">
-    <div class="row">
-      <div class="col dimfull text-center" id="animation">
-        <div id="ccimage" class="img-circle">
-          <img loading="eager" src="http://www.gravatar.com/avatar/dd383cf768b558e28f7753a1014b82a0?s=200"
-            alt="Diaa Kasem Image">
+    <div class="hero3d-wrapper">
+      <div class="hero3d-perspective">
+        <div class="hero3d-card" id="hero3d-card" aria-labelledby="home-heading">
+          <div class="hero3d-glow"></div>
+          <div class="hero3d-inner">
+            <div class="hero3d-avatar">
+              <img loading="eager" src="http://www.gravatar.com/avatar/dd383cf768b558e28f7753a1014b82a0?s=200"
+                alt="Portrait of Diaa Kasem" />
+            </div>
+            <div class="hero3d-content">
+              <p class="hero3d-kicker">Hello, I'm</p>
+              <h1 id="home-heading" class="hero3d-name">Diaa Kasem</h1>
+              <p class="hero3d-role">Senior Software Engineer</p>
+              <p class="hero3d-meta">
+                Currently at
+                <a href="https://www.meetsoci.com/" target="_blank" rel="noopener noreferrer">SOCi</a>
+              </p>
+            </div>
+          </div>
         </div>
-        <p id="hello" class=" ">Hello, I'm</p>
-        <h1 id="ccname" class=" ">Diaa Kasem</h1>
-        <h2 id="ccfunction" class=" ">Senior Software Engineer</h2>
       </div>
     </div>
   </div>
-</div>
+</section>
 <div id="about" class="cream-container parallax" data-speed="1" data-offsetY="-150">
   <div class="icon-container">
     <div><span class="glyphicons user"><i></i></span></div>
@@ -35,22 +38,20 @@
       <div class="col dimfull text-center">
         <h2>About Me</h2>
         <p class="intro big">
-        <div>
-          I have recently joined the amazing <a href="https://meetsoci.com" title="SOCi" target="_blank">SOCi</a> team as a Senior Software Engineer.
-          After spending more than two and a half years with the <a href="https://muso.ai" title="MUSO.AI">Muso.ai</a> team,
+          I have recently joined the amazing
+          <a href="https://meetsoci.com" title="SOCi" target="_blank" rel="noopener noreferrer">SOCi</a>
+          team as a Senior Software Engineer, after spending more than two and a half years with the
+          <a href="https://muso.ai" title="MUSO.AI" target="_blank" rel="noopener noreferrer">Muso.ai</a> team,
           where I served as a Senior Software Engineer, Solutions Architect, and for a while, a Team Lead.
-        </div>
-        <div>
-          Some of the technologies, languages, and frameworks I have personally used include:
-          Bash, JavaScript, Node.js, D3.js, Lodash, and many others.
-          Of course, LessCSS, Sass, Bootstrap, Flexbox,
-          React, and several other front-end technologies to provide
-          the best user experience.
-          Python, Django, Flask, Celery, PostgreSQL, MySQL, MongoDB, AWS Neptune, and Rust.
-        </div>
-        <div>
-          Docker, Terraform, Ansible, and AWS Lambda.
-        </div>
+        </p>
+        <p>
+          Some of the technologies, languages, and frameworks I have personally used include Bash, JavaScript,
+          Node.js, D3.js, Lodash, and many others. I enjoy working with LessCSS, Sass, Bootstrap, Flexbox, React,
+          and several other front-end technologies to provide the best user experience.
+        </p>
+        <p>
+          On the back end, I work with Python, Django, Flask, Celery, PostgreSQL, MySQL, MongoDB, AWS Neptune,
+          and Rust — along with Docker, Terraform, Ansible, and AWS Lambda.
         </p>
       </div>
     </div>
@@ -69,10 +70,14 @@
           <dt class="col dim1half text-right padright">Address</dt>
           <dd class="col dim1half text-left padleft">Cairo<br />Egypt</dd>
           <dt class="col dim1half text-right padright">Email</dt>
-          <dd class="col dim1half text-left padleft">me AT diaa.me</dd>
+          <dd class="col dim1half text-left padleft">
+            <a href="mailto:me@diaa.me">me@diaa.me</a>
+          </dd>
           <dt class="col dim1half text-right padright">Upwork Profile</dt>
           <dd class="col dim1half text-left padleft">
-            <a href="https://www.upwork.com/users/~019c6c183545f26f3f" target="_blank"> https://www.upwork.com/</a>
+            <a href="https://www.upwork.com/users/~019c6c183545f26f3f" target="_blank" rel="noopener noreferrer">
+              Upwork profile
+            </a>
           </dd>
         </dl>
       </div>
@@ -121,14 +126,10 @@
         <div class="position">
           <h3>SOCi</h3>
           <h4>Senior Software Engineer</h4>
+          <p>Working with a great team to build products that help local businesses grow.</p>
           <p>
-            Working with a great team to build a great product to help local businesses grow.
-          <p>
-            The project was built on top of:
-          </p>
-          <p>
-            Docker, MySQL, PHP, AWS (RDS, ECR, Lambda, SQS, SNS, Elasticach/Redis), Nodejs, GoLang.
-          </p>
+            The platform is built with Docker, MySQL, PHP, AWS (RDS, ECR, Lambda, SQS, SNS, ElastiCache/Redis),
+            Node.js, and Go.
           </p>
           <div class="more">
             <a class="btn" href="http://www.meetsoci.com" target="_blank">
@@ -142,14 +143,10 @@
         <div class="position">
           <h3>Muso.ai</h3>
           <h4>Tech Lead</h4>
+          <p>Led a great team building a leading music credits platform.</p>
           <p>
-            Leading a great team to help building a leading music credits platform.
-          <p>
-            The project was built on top of:
-          </p>
-          <p>
-            Docker, Postgresql, Gremlin, AWS (Neptune, ECR, Lambda, SQS, SNS, Elasticach/Redis), Vue.js, Nodejs.
-          </p>
+            The project used Docker, PostgreSQL, Gremlin, AWS (Neptune, ECR, Lambda, SQS, SNS, ElastiCache/Redis),
+            Vue.js, and Node.js.
           </p>
           <div class="more">
             <a class="btn" href="http://www.muso.ai" target="_blank">
@@ -163,13 +160,11 @@
           <h3>Qarii</h3>
           <h4>CEO and Founder of Qarii Software Company</h4>
           <p>
-            We have created multiple failing projects, where I have learned a lot about the business side.
-            Like <a href="https://wasmissing.com" target="_blank">Was Missing</a>,
-            <a href="https://theokr.com" target="_blank">The OKR</a> and
-            <a href="https://marketmsr.com">MarketMSR</a> and other smaller
-            projects like <strong>Filterlike</strong>, <strong>QPinger</strong>
-            and <strong>Desaigns</strong>.
-          </p>
+            Built and iterated on multiple products, learning a lot about the business side in the process, including
+            <a href="https://wasmissing.com" target="_blank" rel="noopener noreferrer">Was Missing</a>,
+            <a href="https://theokr.com" target="_blank" rel="noopener noreferrer">The OKR</a>,
+            <a href="https://marketmsr.com" target="_blank" rel="noopener noreferrer">MarketMSR</a>, and other smaller
+            projects like <strong>Filterlike</strong>, <strong>QPinger</strong>, and <strong>Desaigns</strong>.
           </p>
           <div class="more">
             <a class="btn" href="http://www.qarii.com" target="_blank">
@@ -183,18 +178,12 @@
           <h3>Tqweem</h3>
           <h4>Tqweem Head Of Engineers</h4>
           <p>
-            Leading a great team to help building an outstanding
-            E-learning application focusing on pin pointing the difficulties a
-            student faces while studying and helping him/her improve and be able
-            to understand and succeed.
-          <p>
-            The project was initially structured using:
+            Led a team building an e-learning application focused on identifying and addressing student difficulties to
+            help them understand and succeed.
           </p>
           <p>
-            Docker, InfluxDB, Jenkins.
-            Angularjs, Nodejs, Django, Tastypie, requirejs and jasmine.
-            Bootstrap3, CSS3, Less CSS and HTML5.
-          </p>
+            The project used Docker, InfluxDB, Jenkins, AngularJS, Node.js, Django, Tastypie, RequireJS, Jasmine,
+            Bootstrap 3, CSS3, Less, and HTML5.
           </p>
           <div class="more">
             <a class="btn" href="http://www.tqweem.com" target="_blank">
@@ -208,17 +197,11 @@
           <h3>Elproff - Academy 77</h3>
           <h4>Elproff Technical Team Leader</h4>
           <p>
-            Got the chance to lead a great team to help building an outstanding
-            E-learning application focusing on pin pointing the difficulties a
-            student faces while studying and helping him/her improve and be able
-            to understand and succeed.
-          <p>
-            The project was initially structured using:
+            Led a team building an e-learning application focused on helping students understand and succeed.
           </p>
           <p>
-            Angularjs, Nodejs, Django, Tastypie, requirejs and jasmine.
-            Bootstrap3, CSS3, Less CSS and HTML5.
-          </p>
+            The project used AngularJS, Node.js, Django, Tastypie, RequireJS, Jasmine, Bootstrap 3, CSS3, Less, and
+            HTML5.
           </p>
           <div class="more">
             <a class="btn" href="http://www.tqweem.com" target="_blank">
@@ -231,20 +214,11 @@
         <div class="position">
           <h3>Upwork - Freelancer</h3>
           <h4>Web Solutions Developer</h4>
+          <p>I worked as a freelance web solutions developer on Upwork.</p>
           <p>
-          <p>
-            I am excellent at the following:
-          </p>
-          <p>
-            Javascript, Angularjs, Nodejs, D3js, expressjs, Rust,
-            coffeescript, requirejs, socket.io, and jasmine.
-            Python flask, mongodb, rethinkdb and parse.com(ParseAPI).
-            Bootstrap3, CSS3, Less CSS, HTML5 and PUG templates.
-          </p>
-          <p>
-            I have been using angularjs, d3js and python for the past two years
-            and developing web solutions for seven years.
-          </p>
+            Technologies included JavaScript, AngularJS, Node.js, D3.js, Express.js, Rust, CoffeeScript, RequireJS,
+            Socket.io, Jasmine, Python (Flask), MongoDB, RethinkDB, Parse.com (Parse API), Bootstrap 3, CSS3, Less,
+            HTML5, and Pug templates.
           </p>
           <div class="more">
             <a class="btn" href="https://www.upwork.com/users/~019c6c183545f26f3f" target="_blank">Check My Profile</a>
@@ -256,10 +230,9 @@
           <h3>CodeScalers</h3>
           <h4>Solutions Developer</h4>
           <p>
-            With a great team developing a cloud computing management solution.
-            I was specialized in front-end technologies (Javascript, AngularJS,
-            D3JS, Lodash, JQuery, JQuery Templates, Lesscss, Coffeescript,
-            Jasmine, Karma).
+            Worked with a great team developing a cloud computing management solution, specializing in front-end
+            technologies such as JavaScript, AngularJS, D3.js, Lodash, jQuery, jQuery Templates, Less, CoffeeScript,
+            Jasmine, and Karma.
           </p>
           <div class="more">
             <a class="btn" href="http://incubaid.com/" target="_blank">Company website</a>
@@ -271,7 +244,7 @@
           <h3>Integrant Inc.</h3>
           <h4>Software Engineer</h4>
           <p>
-            Along with a nice team developing a CRM software for an adverticing
+            Worked with a team developing CRM software for an advertising
             agency using GWT, GXT, Spring, Hibernate, Quartz,
             Apache CXF Web Services and JMS Technologies using OpenMQ.
           </p>
@@ -285,10 +258,8 @@
           <h3>iCraft</h3>
           <h4>JBoss Administrator</h4>
           <p>
-            Outsourced to RAYA Software and Bull companies as JBoss(AS)
-            Consultant/Administrator in a project for the Egyptian Taxes
-            Authority. I was in charge of tuning the JBoss AS performance,
-            creating the JBoss Clusters and the Apache Load Balancer.
+            Outsourced to RAYA Software and Bull companies as a JBoss (AS) consultant/administrator on a project for
+            the Egyptian Tax Authority, tuning JBoss AS performance and managing clustering and load balancing.
           </p>
         </div>
 
@@ -297,11 +268,9 @@
           <h3>XTEND</h3>
           <h4>Software Engineer</h4>
           <p>
-            Developing a communication software that enables users to
-            control/communicate with their facebook accounts through SMS. The
-            project included different languages (Groovy, Java and PHP) and
-            technologies (Yahoo pipes, FB APIs, Google Reader Java APIs, JSON,
-            XML, Java Reflections and RMI )
+            Developed communication software that enabled users to interact with their Facebook accounts via SMS using
+            Groovy, Java, PHP, Yahoo Pipes, Facebook APIs, Google Reader Java APIs, JSON, XML, Java Reflection, and
+            RMI.
           </p>
         </div>
 
@@ -309,7 +278,7 @@
         <div class="position last">
           <h3>Arabsoftware.net</h3>
           <h4>PHP Developer</h4>
-          <p>I worked as A PHP Freelancer.</p>
+          <p>I worked as a PHP freelancer.</p>
         </div>
       </div>
     </div>
@@ -331,51 +300,51 @@
         </p>
         <div class="row services">
           <div class="col dim1third">
-            <img loading="lazy" src="/images/nodejs.png" alt="NodeJS">
+            <img loading="lazy" src="/images/nodejs.png" alt="Node.js logo">
             <h3>NodeJS</h3>
             <p>I have been using NodeJS for 10 years.</p>
           </div>
           <div class="col dim1third">
-            <img loading="lazy" src="/images/angularjs.png" alt="">
+            <img loading="lazy" src="/images/angularjs.png" alt="AngularJS logo">
             <h3>AngularJS</h3>
             <p>I have used angularjs for more than 4 years</p>
           </div>
           <div class="col dim1third">
-            <img loading="lazy" src="./images/d3.svg" alt="">
+            <img loading="lazy" src="./images/d3.svg" alt="D3.js logo">
             <h3>D3JS</h3>
             <p>I have been using D3JS visualization library to create out
               standing visualizations.</p>
           </div>
           <span class="clear"></span><span class="spacer"></span>
           <div class="col dim1third">
-            <img loading="lazy" src="/images/mongodb.png" alt="">
+            <img loading="lazy" src="/images/mongodb.png" alt="MongoDB logo">
             <h3>MongoDB</h3>
             <p>I have been using mongodb for storing data in almost all my
               NodeJS projects</p>
           </div>
           <div class="col dim1third">
-            <img loading="lazy" src="/images/Octocat.png" alt="">
+            <img loading="lazy" src="/images/Octocat.png" alt="GitHub Octocat logo">
             <h3>GitHub</h3>
             <p>I use Github and Git protocol to manage my projects.</p>
           </div>
           <div class="col dim1third">
-            <img loading="lazy" src="./images/rust.png" alt="">
+            <img loading="lazy" src="./images/rust.png" alt="Rust programming language logo">
             <h3>Rust</h3>
             <p>I have experience with Rust for systems programming and web development with frameworks like Rocket.</p>
           </div>
           <div class="col dim1third">
-            <img loading="lazy" src="./images/vim.png" alt="">
+            <img loading="lazy" src="./images/vim.png" alt="Vim editor logo">
             <h3>VIM</h3>
             <p>I love vim, its an editor, but its the best.</p>
           </div>
           <div class="col dim1third">
-            <img loading="lazy" src="./images/docker.png" alt="">
+            <img loading="lazy" src="./images/docker.png" alt="Docker logo">
             <h3>Docker</h3>
             <p>Docker is one of a kind. It showed me how to apply the old
               SOA ( Now microservice ) in a great and easy way. </p>
           </div>
           <div class="col dim1third">
-            <img loading="lazy" src="./images/aws-lambda.png" alt="">
+            <img loading="lazy" src="./images/aws-lambda.png" alt="AWS Lambda logo">
             <h3>AWS Lambda</h3>
             <p>There is nothing better than code, test, deploy, test, and
               ship. With no DevOps involved. I love it.</p>
@@ -398,47 +367,57 @@
           <br />
           Javascript, Angularjs, Nodejs, D3js, expressjs, sailsjs, coffeescript,
         </p>
-        <dl class="row skills">
-          <h3>List of Skills</h3>
-          <dl class="row">
-            <dt class="col dim1half text-right padright">Web Technologies</dt>
-            <dd class="col dim1half text-left padleft">
-              <span class="btn">JavaScript</span>
-              <span class="btn">Socket.io</span>
-              <span class="btn">Jasmine</span>
-              <span class="btn">D3JS</span>
-              <span class="btn">React</span>
-              <span class="btn">Vue</span>
-              <span class="btn">Next.js</span>
-            </dd>
-            <dt class="col dim1half text-right padright">Programming</dt>
-            <dd class="col dim1half text-left padleft">
-              <span class="btn">Python</span>
-              <span class="btn">Rust</span>
-              <span class="btn">Node.js</span>
-              <span class="btn">PHP</span>
-              <span class="btn">MongoDB</span>
-              <span class="btn">MySQL</span>
-              <span class="btn">Postgresql</span>
-              <span class="btn">Neptune</span>
-              <span class="btn">Gremlin</span>
-              <span class="btn">Redis</span>
-            </dd>
-            <dt class="col dim1half text-right padright">Tools &amp; Utilities</dt>
-            <dd class="col dim1half text-left padleft">
-              <span class="btn">NeoVIM</span>
-              <span class="btn">Shell Scripting</span>
-              <span class="btn">Ansible</span>
-              <span class="btn">Jenkins</span>
-              <span class="btn">Terraform</span>
-              <span class="btn">AWS CLI</span>
-              <span class="btn">Yeoman</span>
-              <span class="btn">Git</span>
-              <span class="btn">Webpack</span>
-              <span class="btn">Lesscss</span>
-              <span class="btn">SCSS</span>
-            </dd>
-          </dl>
+        <div class="row skills-list">
+          <div class="col dim1half text-right padright">
+            <h3>Web Technologies</h3>
+          </div>
+          <div class="col dim1half text-left padleft">
+            <ul class="skill-tags" aria-label="Web technologies">
+              <li><span class="btn">JavaScript</span></li>
+              <li><span class="btn">Socket.io</span></li>
+              <li><span class="btn">Jasmine</span></li>
+              <li><span class="btn">D3.js</span></li>
+              <li><span class="btn">React</span></li>
+              <li><span class="btn">Vue</span></li>
+              <li><span class="btn">Next.js</span></li>
+            </ul>
+          </div>
+          <div class="col dim1half text-right padright">
+            <h3>Programming &amp; Data</h3>
+          </div>
+          <div class="col dim1half text-left padleft">
+            <ul class="skill-tags" aria-label="Programming languages and data tools">
+              <li><span class="btn">Python</span></li>
+              <li><span class="btn">Rust</span></li>
+              <li><span class="btn">Node.js</span></li>
+              <li><span class="btn">PHP</span></li>
+              <li><span class="btn">MongoDB</span></li>
+              <li><span class="btn">MySQL</span></li>
+              <li><span class="btn">PostgreSQL</span></li>
+              <li><span class="btn">Neptune</span></li>
+              <li><span class="btn">Gremlin</span></li>
+              <li><span class="btn">Redis</span></li>
+            </ul>
+          </div>
+          <div class="col dim1half text-right padright">
+            <h3>Tools &amp; Utilities</h3>
+          </div>
+          <div class="col dim1half text-left padleft">
+            <ul class="skill-tags" aria-label="Tools and utilities">
+              <li><span class="btn">NeoVIM</span></li>
+              <li><span class="btn">Shell scripting</span></li>
+              <li><span class="btn">Ansible</span></li>
+              <li><span class="btn">Jenkins</span></li>
+              <li><span class="btn">Terraform</span></li>
+              <li><span class="btn">AWS CLI</span></li>
+              <li><span class="btn">Yeoman</span></li>
+              <li><span class="btn">Git</span></li>
+              <li><span class="btn">Webpack</span></li>
+              <li><span class="btn">Less</span></li>
+              <li><span class="btn">SCSS</span></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -450,239 +429,27 @@
   <div class="container wrap">
     <div class="row">
       <div class="col dimfull text-center">
-        <h2>Portfolio</h2>
-        <p class="intro">Few shots of my work</p>
-        <div class="row o-items-container format-mosaic o-index" data-cols="4" id="o-container">
-          <div class="post hentry col o-item o-filterable-cat1" data-cols="1" id="item-0">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/soci.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/soci.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat1" data-cols="1" id="item-0">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/muso.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/muso.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat1" data-cols="1" id="item-0">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/p0.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/p0.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat1" data-cols="1" id="item-1">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/p1.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/p1.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-2">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/p2.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/p2.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat1" data-cols="1" id="item-3">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/p3.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/p3.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-4">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/p4.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/p4.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat1" data-cols="1" id="item-5">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/p5.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/p5.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-6">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/p6.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/p6.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat1" data-cols="1" id="item-7">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/p7.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/p7.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-8">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/p8.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/p8.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-8">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/p9.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/p9.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-8">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/p10.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/p10.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-8">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/p11.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/p11.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-8">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/p12.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/p12.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-8">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/p13.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/p13.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-8">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/p14.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/p14.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-8">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/p15.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/p15.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-8">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/p16.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/p16.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-8">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/p17.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/p17.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-8">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/p18.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/p18.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-8">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/p19.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/p19.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-8">
-            <div class="inner-hentry">
-              <div class="posthead">
-                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio/p20.png"
-                  data-zoomtitle="" data-zoomi18n="Zoom">
-                  <img loading="lazy" src="./images/portfolio/p20.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
+        <h2>Selected Projects</h2>
+        <p class="intro">A small sample of projects I’ve worked on.</p>
+        <div class="row portfolio-list">
+          <article class="col dim1third portfolio-item">
+            <img loading="lazy" src="./images/portfolio/soci.png"
+              alt="Screenshot from SOCi, a local marketing platform" />
+            <h3>SOCi</h3>
+            <p>Senior Software Engineer helping build a platform for multi-location marketing.</p>
+          </article>
+          <article class="col dim1third portfolio-item">
+            <img loading="lazy" src="./images/portfolio/muso.png"
+              alt="Screenshot from Muso.ai, a music credits platform" />
+            <h3>Muso.ai</h3>
+            <p>Tech Lead building a music credits platform for artists and professionals.</p>
+          </article>
+          <article class="col dim1third portfolio-item">
+            <img loading="lazy" src="./images/portfolio/p0.png"
+              alt="Sample visualization work using D3.js and modern web stacks" />
+            <h3>Data Visualizations</h3>
+            <p>Interactive dashboards and visualizations using D3.js and modern web tooling.</p>
+          </article>
         </div>
       </div>
     </div>
@@ -700,29 +467,12 @@
           being connected with the visitors of my website.</p>
         <p class="intro">Drop me a line @ one of the following</p>
         <div class="more">
-          <a href="https://www.facebook.com/diaa.kasem" class="btn transparent" target="_blank">
+          <a href="https://www.facebook.com/diaa.kasem" class="btn transparent" target="_blank"
+            rel="noopener noreferrer" aria-label="Visit my Facebook profile">
             <span class="glyphicons facebook"><i></i></span>Facebook</a>
-          <a href="https://twitter.com/diaa_kasem" class="btn transparent" target="_blank">
+          <a href="https://twitter.com/diaa_kasem" class="btn transparent" target="_blank" rel="noopener noreferrer"
+            aria-label="Visit my Twitter profile">
             <span class="glyphicons twitter"><i></i></span>Twitter</a>
-          <a href="google.com/+DiaaKasem0" class="btn transparent"><span
-              class="glyphicons google_plus"><i></i></span>Google Plus</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="tweetr" class="cream-container parallax" data-speed="26" data-offsetY="-150">
-  <div class="icon-container">
-    <div><span class="glyphicons bullhorn"><i></i></span></div>
-  </div>
-  <div class="container wrap">
-    <div class="row">
-      <div class="col dimfull text-center">
-        <h2>Last Tweet</h2>
-        <div id="twitterbox" data-user="diaa_kasem" data-count="1"></div>
-        <div class="more">
-          <br /><a href="https://twitter.com/diaa_kasem" class="btn transparent" target="_blank">
-            <span class="glyphicons twitter"><i></i></span>Follow me</a>
         </div>
       </div>
     </div>
@@ -735,11 +485,11 @@
   <div class="container wrap">
     <div class="row">
       <div class="col dimfull text-center">
-        <h2>Contact me</h2>
-        <p class="intro">It will be my pleasure to be contacted by you </p>
+        <h2>Contact Me</h2>
+        <p class="intro">It will be my pleasure to be contacted by you.</p>
         <p class="intro">Send me a
-          <b>( Compliment, Advice, Crticism, or Suggestion)</b>
-          email. <br /> Or whatever you like.
+          <b>(Compliment, Advice, Criticism, or Suggestion)</b>
+          email, or whatever you like.
         </p>
         <p class="intro">
           <a href="mailto:me@diaa.me">me@diaa.me</a>
@@ -759,7 +509,8 @@
         <p class="intro">This is a generated resume of my linkedin profile.
           It contains some of my work before I become a fulltime freelancer.</p>
         <p class="intro">For my work as a freelancer, please, visit my
-          <a href="https://www.upwork.com/users/~019c6c183545f26f3f" target="_blank">Upwork profile.</a>
+          <a href="https://www.upwork.com/users/~019c6c183545f26f3f" target="_blank" rel="noopener noreferrer">Upwork
+            profile.</a>
         </p>
         <a href="/diaa_kasem_resume.pdf" target="_blank" class="btn">Download</a>
 

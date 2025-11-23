@@ -1,32 +1,28 @@
 {% extends "base.html" %}
 
+{% block title %}{{ page.title }} | Blog | Diaa Kasem{% endblock %}
+
+{% block body_class %}blog-layout{% endblock %}
+
 {% block head %}
 {{ super() }}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-<style>
-  :root {
-    --primary: #ff6760;
-    --primary-hover: #ff5a52;
-  }
-  article header {
-    margin-bottom: 2rem;
-  }
-</style>
+<link rel="stylesheet" href="/blog.css">
 {% endblock %}
 
 {% block content %}
-<main class="container">
-  <article>
-    <header>
-      <hgroup>
-        <h1>{{ page.title }}</h1>
-        <p>Published on <time datetime="{{ page.date }}">{{ page.date | date(format="%B %d, %Y") }}</time></p>
-      </hgroup>
+<div class="container blog-main">
+  <article class="blog-article">
+    <header class="blog-article-header">
+      <p class="blog-kicker">Blog</p>
+      <h1 class="blog-article-title">{{ page.title }}</h1>
+      <p class="blog-article-meta">
+        <time datetime="{{ page.date }}">{{ page.date | date(format="%b %d, %Y") }}</time>
+      </p>
     </header>
 
-    <section>
+    <section class="blog-article-content" aria-label="Blog post content">
       {{ page.content | safe }}
     </section>
   </article>
-</main>
+</div>
 {% endblock %}

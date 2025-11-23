@@ -1,46 +1,42 @@
 {% extends "base.html" %}
 
+{% block title %}Blog | Diaa Kasem{% endblock %}
+
+{% block body_class %}blog-layout{% endblock %}
+
 {% block head %}
 {{ super() }}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-<style>
-  :root {
-    --primary: #ff6760;
-    --primary-hover: #ff5a52;
-  }
-</style>
+<link rel="stylesheet" href="/blog.css">
 {% endblock %}
 
 {% block content %}
-<main class="container">
-  <header>
-    <hgroup>
-      <h1>{{ section.title }}</h1>
-      <p>Exploring thoughts, ideas, and experiences</p>
-    </hgroup>
+<div class="container blog-main">
+  <header class="blog-hero">
+    <p class="blog-kicker">Blog</p>
+    <h1 class="blog-hero-title">{{ section.title }}</h1>
+    <p class="blog-hero-subtitle">
+      Notes on software engineering, infrastructure, and tools I enjoy using.
+    </p>
   </header>
 
-  <div class="grid">
-    <section>
-      <h2>Recent Posts</h2>
-      <ul>
-        {% for page in section.pages %}
-        <li>
-          <article>
-            <header>
-              <a href="{{ page.permalink | safe }}">
-                <h3>{{ page.title }}</h3>
-              </a>
-              <small>{{ page.date | date(format="%B %d, %Y") }}</small>
-            </header>
-            {% if page.summary %}
-            <p>{{ page.summary }}</p>
-            {% endif %}
-          </article>
-        </li>
-        {% endfor %}
-      </ul>
-    </section>
-  </div>
-</main>
+  <section class="blog-list" aria-label="Recent posts">
+    {% for page in section.pages %}
+    <article class="blog-card">
+      <a class="blog-card-link" href="{{ page.permalink | safe }}">
+        <header class="blog-card-header">
+          <p class="blog-card-meta">
+            <span class="blog-card-date">
+              <time datetime="{{ page.date }}">{{ page.date | date(format="%b %d, %Y") }}</time>
+            </span>
+          </p>
+          <h2 class="blog-card-title">{{ page.title }}</h2>
+        </header>
+        {% if page.summary %}
+        <p class="blog-card-excerpt">{{ page.summary }}</p>
+        {% endif %}
+      </a>
+    </article>
+    {% endfor %}
+  </section>
+</div>
 {% endblock %}

@@ -1,44 +1,205 @@
-body {
+body.blog-layout {
+  background-color: #020617;
+  color: #e5e7eb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    -apple-system, "Segoe UI", sans-serif;
+}
+
+body.blog-layout a {
+  color: #38bdf8;
+}
+
+body.blog-layout a:hover {
+  color: #0ea5e9;
+}
+
+body.blog-layout .site-header {
+  background: rgba(15, 23, 42, 0.95);
+  border-bottom: 1px solid #111827;
+  backdrop-filter: blur(12px);
+}
+
+body.blog-layout .site-footer {
+  background: #020617;
+}
+
+body.blog-layout .main-body-container {
+  display: flex;
   flex-direction: column;
+  flex: 1 0 auto;
+}
 
-  header {
-    flex-direction: row;
-    display: flex;
-    flex: 1 0 auto;
-    align-items: stretch;
-    background-color: #334155;
-    padding: 20px;
+.blog-main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+}
 
-    div.image-container {
-      flex: 0 1 auto;
-    }
-    h1 {
-      flex: 1 0 auto;
-      color: white;
-      // font-size: 3.5em;
-      margin: 0;
-      padding: 0;
-    }
-  }
+.blog-hero {
+  margin-bottom: 2.5rem;
+}
 
-  ul {
-    li {
-    }
-  }
+.blog-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
 
-  .blog-section-body  {
-    display: flex;
-    flex: 1 0 auto;
-    flex-direction: column;
+.blog-hero-title {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin: 0 0 0.75rem 0;
+}
+
+.blog-hero-subtitle {
+  max-width: 40rem;
+  color: #9ca3af;
+  margin: 0;
+}
+
+.blog-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .blog-list {
+    gap: 1.25rem;
   }
 }
 
-li {
-  list-style: none;
+.blog-card {
+  background-color: #020617;
+  border-radius: 0.9rem;
+  border: 1px solid #111827;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.55);
+  transition: border-color 0.18s ease, transform 0.18s ease,
+    box-shadow 0.18s ease, background-color 0.18s ease;
 }
 
-.main-body-container {
-  display: flex;;
-  flex-direction: column;
-  flex: 1 0 1px;
+.blog-card-link {
+  display: block;
+  color: inherit;
+}
+
+.blog-card:hover {
+  border-color: #38bdf8;
+  transform: translateY(-3px);
+  box-shadow: 0 22px 50px rgba(15, 23, 42, 0.85);
+  background-color: #030712;
+}
+
+.blog-card-header {
+  margin-bottom: 0.5rem;
+}
+
+.blog-card-meta {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin: 0 0 0.35rem 0;
+}
+
+.blog-card-title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.blog-card-excerpt {
+  margin: 0.4rem 0 0;
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+.blog-article {
+  max-width: 46rem;
+  margin: 0 auto;
+}
+
+.blog-article-header {
+  margin-bottom: 2rem;
+}
+
+.blog-article-title {
+  font-size: 2.2rem;
+  line-height: 1.1;
+  margin: 0.25rem 0 0.75rem 0;
+}
+
+.blog-article-meta {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.blog-article-content {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #e5e7eb;
+}
+
+.blog-article-content p {
+  margin-bottom: 1.1rem;
+}
+
+.blog-article-content a {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.blog-article-content pre,
+.blog-article-content code {
+  font-family: ui-monospace, Menlo, Monaco, "SF Mono", "JetBrains Mono",
+    "Fira Code", monospace;
+}
+
+.blog-article-content pre {
+  background-color: #020617;
+  border-radius: 0.75rem;
+  padding: 1rem 1.1rem;
+  overflow-x: auto;
+  border: 1px solid #111827;
+  margin-bottom: 1.25rem;
+}
+
+.blog-article-content code {
+  background-color: #111827;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.35rem;
+  font-size: 0.9em;
+}
+
+.blog-article-content pre code {
+  background: transparent;
+  padding: 0;
+}
+
+.blog-article-content blockquote {
+  margin: 0 0 1.2rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid #4b5563;
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.blog-article-content h2,
+.blog-article-content h3,
+.blog-article-content h4 {
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+  scroll-margin-top: 5rem;
+}
+
+.blog-article-content ul,
+.blog-article-content ol {
+  margin: 0 0 1.2rem 1.25rem;
+}
+
+.blog-article-content li {
+  margin-bottom: 0.35rem;
 }
